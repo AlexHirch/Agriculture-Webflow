@@ -1,0 +1,30 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+
+.App{
+    overflow-x: hidden;
+}
+
+@font-face {
+    font-family: 'Yellowtail';
+    src: url("./resource/fonts/Yellowtail-Regular.ttf");
+}
+
+@font-face {
+    font-family: 'Roboto';
+    src: url("./resource/fonts/Roboto-Bold.ttf");
+}
+@font-face {
+    font-family: 'RobotoRegular';
+    src: url("./resource/fonts/Roboto-Regular.ttf");
+}
+.containCenter{
+    max-width: 1920px;
+    margin: auto;
+    position: relative;
+}
