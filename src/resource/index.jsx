@@ -14,7 +14,18 @@ export { default as BgHpEco } from "./img/bg-hpEco.png";
 export { default as ImgHpE1_1 } from "./img/Image (8).png";
 export { default as ImgHpE1_2 } from "./img/Image (9).png";
 export { default as ImgHpE1_3 } from "./img/Image (10).png";
-export { default as HpImg2_1 } from "./img/HpImgE2_1.png"
-export { default as HpImg2_2 } from "./img/HpImgE2_2.png"
-export { default as Yban1 } from "./img/yban1png.png"
-export { default as SubscribeBgImg } from "./img/subscribebgIMgpng.png"
+export { default as HpImg2_1 } from "./img/HpImgE2_1.png";
+export { default as HpImg2_2 } from "./img/HpImgE2_2.png";
+export { default as Yban1 } from "./img/yban1png.png";
+export { default as SubscribeBgImg } from "./img/subscribebgIMgpng.png";
+export { default as AboutBg } from "./img/aboutbg.png";
+export { default as AboutBg1 } from "./img/aboutbg1.png";
+export { default as AboutUsBg } from "./img/AboutUsBg.png";
+export { default as About1img } from "./img/About1img.png";
+export { default as AboutMiniIcon1 } from "./img/AboutMiniIcon (1).svg"
+export { default as AboutMiniIcon2 } from "./img/AboutMiniIcon (2).svg"
+export { default as AboutImgGreen } from "./img/AboutImgGreen.png"
+export { default as Icon1_1 } from "./img/Icon1-1.svg" 
+export { default as Icon1_2 } from "./img/Icon1-2.svg" 
+export { default as Icon1_3 } from "./img/Icon1-3.svg" 
+export { default as Icon1_4 } from "./img/Icon1-4.svg" 

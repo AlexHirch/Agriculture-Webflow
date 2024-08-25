@@ -1,6 +1,6 @@
 import React from "react";
 import "../styles/home.scss";
-import { BackgroundPatterns, Counter1, HomeBackground } from "../resource";
+import { BackgroundPatterns, HomeBackground } from "../resource";
 import { IoArrowForwardCircle } from "react-icons/io5";
 import OfferBanner from "../components/offerBanner";
 import HomeAbout_us from "../components/home-about_us";
