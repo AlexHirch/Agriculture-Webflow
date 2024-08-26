@@ -10,8 +10,11 @@ import {
   Icon1_2,
   Icon1_3,
   Icon1_4,
+  kurkuma,
 } from "../resource";
 import { IoMdArrowRoundForward } from "react-icons/io";
+import TeamAbout from "../components/teamAbout";
+import { IoArrowForwardCircle } from "react-icons/io5";
 
 const About = () => {
   return (
@@ -125,6 +128,43 @@ const About = () => {
               <img src={Icon1_4} alt="" />
               <h3>Secured Payment</h3>
               <p>Simply dummy text of the printintypesetting industry.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <TeamAbout />
+      <div className="bgc a274C5B">
+        <div className="About OfferForYou containCenter">
+          <div className="top">
+            <p>About Us</p>
+            <h2>What We Offer for You</h2>
+          </div>
+          <div className="bot">
+            <div className="cards">
+              <div className="card">
+                <div className="img">
+                  <img src={kurkuma} alt="" />
+                </div>
+                <p className="Name">Spicy</p>
+              </div>
+              <div className="card">
+                <div className="img">
+                  <img src={kurkuma} alt="" />
+                </div>
+                <p className="Name">Nuts & Feesd</p>
+              </div>
+              <div className="card">
+                <div className="img">
+                  <img src={kurkuma} alt="" />
+                </div>
+                <p className="Name">Fruits</p>
+              </div>
+              <div className="card">
+                <div className="img">
+                  <img src={kurkuma} alt="" />
+                </div>
+                <p className="Name">Vegetable</p>
+              </div>
             </div>
           </div>
         </div>

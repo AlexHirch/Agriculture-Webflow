@@ -29,10 +29,7 @@ const Navbar = () => {
                 </span>
               </p>
               <div className="page">
-                <NavLink to={"/ddd"}>adsadasd</NavLink>
-                <NavLink to={"/ddd"}>adsadasd</NavLink>
-                <NavLink to={"/ddd"}>adsadasd</NavLink>
-                <NavLink to={"/ddd"}>adsadasd</NavLink>
+                <NavLink to={"/our-team"}>Our Team</NavLink>
                 <NavLink to={"/ddd"}>adsadasd</NavLink>
               </div>
             </div>

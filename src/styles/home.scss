@@ -21,6 +21,9 @@
   &.EDEAEB {
     background-color: #edeaeb;
   }
+  &.EDF1F5{
+    background-color: #EDF1F5;
+  }
 }
 
 .bgcolor {
@@ -1368,6 +1371,180 @@
         letter-spacing: 0.5px;
         color: #778388;
       }
+    }
+  }
+}
+
+.TeamAbout{
+  width: 100%;
+  height: max-content;
+  p.pp {
+    display: grid;
+    width: 100%;
+    height: auto;
+    text-align: center;
+    font-family: Roboto;
+    justify-content: center;
+    font-size: 40px;
+    color: #274c5b;
+    span.Yellowtail {
+      font-family: Yellowtail;
+      font-size: 20px;
+      color: #7eb693;
+    }
+    span.small{
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 14px;
+      font-weight: 200;
+      padding: 0 200px;
+      line-height: 20px;
+      color: #778388;
+    }
+  }
+  .containCenter{
+    width: 100%;
+    height: max-content;
+    text-align: center;
+    padding: 30px 180px;
+    .boxes{
+      display: flex;
+      width: 100%;
+      justify-content: space-between;
+      .box{
+        width: 340px;
+        border-radius: 20px;
+        overflow: hidden;
+        text-align: left;
+        background-color: #f9f8f8;
+        position: relative;
+        &:hover{
+          background-color: white;
+          box-shadow: 0 0 20px #bcbcbc;
+        }
+        .img{
+          width: 100%;
+          height: 400px;
+          overflow: hidden;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          img{
+            height: 100%;
+          }
+        }
+        .text{
+          padding: 20px 20px;
+          width: 80%;
+          h3{
+            font-family: Roboto;
+            font-size: 20px;
+            color: #274c5b;
+          }
+          p{
+            padding-top: 10px;
+            font-family: Yellowtail;
+            color: #68a47f;
+            font-size: 16px;
+          }
+        }
+        .icons{
+          display: flex;
+          position: absolute;
+          bottom: 10px;
+          right: 20px;
+          gap: 10px;
+          .icon{
+            color: #274c5b;
+            font-size: 20px;
+          }
+        }
+      }
+    }
+  }
+}
+
+.About.OfferForYou{
+  padding: 100px 200px;
+  .top{
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    p {
+      font-family: Yellowtail;
+      font-size: 20px;
+      color: #68a47f;
+    }
+    h2 {
+      font-family: Roboto;
+      font-size: 40px;
+      color: white;
+    }
+  }
+  .bot{
+    .card{
+      height: max-content;
+      padding: 0;
+      border-radius: 20px;
+      overflow: hidden;
+      background-color: transparent;
+      .img{
+        width: 100%;
+        height: max-content;
+      }
+      p.Name{
+        width: 100%;
+        text-align: center;
+        color: white;
+        padding: 20px;
+      }
+    }
+  }
+}
+
+.Shop {
+  width: 100%;
+  height: max-content;
+  position: relative;
+  .bgimg {
+    width: 100%;
+    display: flex;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    z-index: 0;
+    height: 300px;
+    img {
+      width: 100%;
+      position: absolute;
+      &:first-child {
+        position: relative;
+      }
+      &.bg1 {
+        width: 50%;
+        left: -30%;
+        rotate: 30deg;
+      }
+      &.bg2 {
+        width: 50%;
+        right: -0%;
+        rotate: 210deg;
+      }
+    }
+    p {
+      position: absolute;
+      z-index: 2;
+      font-family: Roboto;
+      font-size: 50px;
+      color: #274c5b;
+    }
+  }
+}
+.shop.OurProducts{
+  padding: 20px 200px;
+  .cards{
+    .card{
+      background-color: #f9f8f8;
     }
   }
 }

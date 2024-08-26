@@ -5,6 +5,7 @@ import { HomePage, Navbar } from "./index-components";
 import Footer from "./components/footer";
 import About from "./path/about";
 import Shop from "./path/shop";
+import OurTeam from "./path/ourTeam";
 
 const App = () => {
   return (
@@ -15,6 +16,7 @@ const App = () => {
           <Route path="/" element={<HomePage />} />
           <Route path="/about" element={<About />} />
           <Route path="/shop" element={<Shop />} />
+          <Route path="/our-team" element={<OurTeam />} />
         </Routes>
         <Footer/>
       </BrowserRouter>
