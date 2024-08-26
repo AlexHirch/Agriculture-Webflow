@@ -21,11 +21,10 @@
   &.EDEAEB {
     background-color: #edeaeb;
   }
-  &.EDF1F5{
-    background-color: #EDF1F5;
+  &.EDF1F5 {
+    background-color: #edf1f5;
   }
 }
-
 .bgcolor {
   top: 150px;
   left: 0;
@@ -1120,7 +1119,6 @@
     }
   }
 }
-
 .About {
   width: 100%;
   height: max-content;
@@ -1349,20 +1347,20 @@
       border-radius: 20px;
       padding: 40px 20px;
       box-shadow: 0 0 20px rgb(227, 227, 227);
-      img{
+      img {
         width: 80px;
         height: 80px;
         background-color: #f9f8f8;
         border-radius: 10px;
         padding: 20px;
       }
-      h3{
+      h3 {
         font-family: Roboto;
         font-size: 20px;
         color: #274c5b;
         padding: 10px 0;
       }
-      p{
+      p {
         font-family: Arial, Helvetica, sans-serif;
         font-size: 14px;
         font-weight: 200;
@@ -1374,8 +1372,7 @@
     }
   }
 }
-
-.TeamAbout{
+.TeamAbout {
   width: 100%;
   height: max-content;
   p.pp {
@@ -1392,7 +1389,7 @@
       font-size: 20px;
       color: #7eb693;
     }
-    span.small{
+    span.small {
       font-family: Arial, Helvetica, sans-serif;
       font-size: 14px;
       font-weight: 200;
@@ -1401,59 +1398,59 @@
       color: #778388;
     }
   }
-  .containCenter{
+  .containCenter {
     width: 100%;
     height: max-content;
     text-align: center;
     padding: 30px 180px;
-    .boxes{
+    .boxes {
       display: flex;
       width: 100%;
       justify-content: space-between;
-      .box{
+      .box {
         width: 340px;
         border-radius: 20px;
         overflow: hidden;
         text-align: left;
         background-color: #f9f8f8;
         position: relative;
-        &:hover{
+        &:hover {
           background-color: white;
           box-shadow: 0 0 20px #bcbcbc;
         }
-        .img{
+        .img {
           width: 100%;
           height: 400px;
           overflow: hidden;
           display: flex;
           align-items: center;
           justify-content: center;
-          img{
+          img {
             height: 100%;
           }
         }
-        .text{
+        .text {
           padding: 20px 20px;
           width: 80%;
-          h3{
+          h3 {
             font-family: Roboto;
             font-size: 20px;
             color: #274c5b;
           }
-          p{
+          p {
             padding-top: 10px;
             font-family: Yellowtail;
             color: #68a47f;
             font-size: 16px;
           }
         }
-        .icons{
+        .icons {
           display: flex;
           position: absolute;
           bottom: 10px;
           right: 20px;
           gap: 10px;
-          .icon{
+          .icon {
             color: #274c5b;
             font-size: 20px;
           }
@@ -1462,10 +1459,9 @@
     }
   }
 }
-
-.About.OfferForYou{
+.About.OfferForYou {
   padding: 100px 200px;
-  .top{
+  .top {
     display: grid;
     align-items: center;
     justify-content: center;
@@ -1481,18 +1477,18 @@
       color: white;
     }
   }
-  .bot{
-    .card{
+  .bot {
+    .card {
       height: max-content;
       padding: 0;
       border-radius: 20px;
       overflow: hidden;
       background-color: transparent;
-      .img{
+      .img {
         width: 100%;
         height: max-content;
       }
-      p.Name{
+      p.Name {
         width: 100%;
         text-align: center;
         color: white;
@@ -1501,7 +1497,6 @@
     }
   }
 }
-
 .Shop {
   width: 100%;
   height: max-content;
@@ -1540,10 +1535,10 @@
     }
   }
 }
-.shop.OurProducts{
+.shop.OurProducts {
   padding: 20px 200px;
-  .cards{
-    .card{
+  .cards {
+    .card {
       background-color: #f9f8f8;
     }
   }
