@@ -22,17 +22,36 @@ export { default as AboutBg } from "./img/aboutbg.png";
 export { default as AboutBg1 } from "./img/aboutbg1.png";
 export { default as AboutUsBg } from "./img/AboutUsBg.png";
 export { default as About1img } from "./img/About1img.png";
-export { default as AboutMiniIcon1 } from "./img/AboutMiniIcon (1).svg"
-export { default as AboutMiniIcon2 } from "./img/AboutMiniIcon (2).svg"
-export { default as AboutImgGreen } from "./img/AboutImgGreen.png"
-export { default as Icon1_1 } from "./img/Icon1-1.svg" 
-export { default as Icon1_2 } from "./img/Icon1-2.svg" 
-export { default as Icon1_3 } from "./img/Icon1-3.svg" 
-export { default as Icon1_4 } from "./img/Icon1-4.svg" 
-export { default as hind } from "./img/hind.png" 
-export { default as gulushlagan } from "./img/gulchi.png" 
-export { default as tuvak } from "./img/tuvak.png" 
-export { default as kurkuma } from "./img/kurkuma.png" 
-export { default as Shaftoli } from "./img/shaftoli.png" 
-export { default as OboyTayyor } from "./img/oboytayyor.png" 
-export { default as Patterns } from "./img/Patterns.png" 
+export { default as AboutMiniIcon1 } from "./img/AboutMiniIcon (1).svg";
+export { default as AboutMiniIcon2 } from "./img/AboutMiniIcon (2).svg";
+export { default as AboutImgGreen } from "./img/AboutImgGreen.png";
+export { default as Icon1_1 } from "./img/Icon1-1.svg";
+export { default as Icon1_2 } from "./img/Icon1-2.svg";
+export { default as Icon1_3 } from "./img/Icon1-3.svg";
+export { default as Icon1_4 } from "./img/Icon1-4.svg";
+export { default as hind } from "./img/hind.png";
+export { default as gulushlagan } from "./img/gulchi.png";
+export { default as tuvak } from "./img/tuvak.png";
+export { default as kurkuma } from "./img/kurkuma.png";
+export { default as Shaftoli } from "./img/shaftoli.png";
+export { default as OboyTayyor } from "./img/oboytayyor.png";
+export { default as Patterns } from "./img/Patterns.png";
+export { default as Anor } from "./img/Anor.png";
+export { default as ShopPatternBg } from "./img/ShopBgPattern.png";
+export { default as SingleProduct } from "./img/single-product.png";
+export { default as Olmalar } from "./img/olmalar.png";
+export { default as Pista } from "./img/pista.png";
+export { default as IconForService1 } from "./img/IconForService (1).svg";
+export { default as IconForService2 } from "./img/IconForService (2).svg";
+export { default as IconForService3 } from "./img/IconForService (3).svg";
+export { default as IconForService4 } from "./img/IconForService (4).svg";
+export { default as IconForService5 } from "./img/IconForService (5).svg";
+export { default as IconForService6 } from "./img/IconForService (6).svg";
+export { default as BgImgService } from "./img/BgImgService.png";
+export { default as PageNotFoundBg } from "./img/PageNotFoundBgImg.png";
+export { default as PageNotFoundPattern } from "./img/PageNotFoundPattern.png";
+export { default as LimeBg } from "./img/lime.png";
+export { default as QualityPattern } from "./img/QualityPattern.png";
+export { default as HindOgorodda } from "./img/hind-ogorodda.png";
+export { default as DirtyHands } from "./img/Dirty hands.png";
+export { default as Pot } from "./img/Pot.png";

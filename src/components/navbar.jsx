@@ -22,15 +22,18 @@ const Navbar = () => {
           </div>
           <div className="page-link">
             <div className="pages">
-              <p>
+              <NavLink className="p" to={"/pages"}>
                 Pages{" "}
                 <span>
                 <IoIosArrowForward />
                 </span>
-              </p>
+              </NavLink>
               <div className="page">
-                <NavLink to={"/our-team"}>Our Team</NavLink>
-                <NavLink to={"/ddd"}>adsadasd</NavLink>
+                <NavLink to={"/pages/our-team"}>Our Team</NavLink>
+                <NavLink to={"/shop/product"}>ShopSingle</NavLink>
+                <NavLink to={"/pages/servise-page"}>Services</NavLink>
+                <NavLink to={"/pages/quality-standart"}>QualityStandart</NavLink>
+                <NavLink to={"/jhbhdvsjbhj"}>PageNotFound</NavLink>
               </div>
             </div>
           </div>

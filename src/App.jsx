@@ -6,6 +6,11 @@ import Footer from "./components/footer";
 import About from "./path/about";
 import Shop from "./path/shop";
 import OurTeam from "./path/ourTeam";
+import PageNotFound from "./path/page-not-found";
+import ShopSingle from "./path/shop-single";
+import ServisePage from "./path/servisePage";
+import PagesLinks from "./path/pagesLinks";
+import QualityStandart from "./path/qualityStandart";
 
 const App = () => {
   return (
@@ -16,7 +21,12 @@ const App = () => {
           <Route path="/" element={<HomePage />} />
           <Route path="/about" element={<About />} />
           <Route path="/shop" element={<Shop />} />
-          <Route path="/our-team" element={<OurTeam />} />
+          <Route path="/pages" element={<PagesLinks />} />
+          <Route path="/pages/our-team" element={<OurTeam />} />
+          <Route path="/shop/product" element={<ShopSingle />} />
+          <Route path="/pages/servise-page" element={<ServisePage />} />
+          <Route path="/pages/quality-standart" element={<QualityStandart />} />
+          <Route path="*" element={<PageNotFound />} />
         </Routes>
         <Footer/>
       </BrowserRouter>
