@@ -9,6 +9,7 @@ import {
   IconForService6,
   Olmalar,
   Pista,
+  Service_pattern,
   ShopPatternBg,
 } from "../resource";
 import { IoArrowForwardCircle } from "react-icons/io5";
@@ -21,7 +22,7 @@ const ServisePage = () => {
         <div className="ServisePage containCenter">
           <div className="bgimg">
             <img className="bg1" src={Olmalar} alt="YAMETE" />
-            <img src={ShopPatternBg} alt="KUDASAY" />
+            <img src={Service_pattern} alt="KUDASAY" />
             <p>Services</p>
           </div>
         </div>

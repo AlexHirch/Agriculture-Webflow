@@ -4,7 +4,7 @@ import {
   HindOgorodda,
   LimeBg,
   Pot,
-  QualityPattern,
+  Q_pattern,
 } from "../resource";
 
 const QualityStandart = () => {
@@ -14,7 +14,7 @@ const QualityStandart = () => {
         <div className="QualityStandart containCenter">
           <div className="bgimg">
             <img className="bg1" src={LimeBg} alt="YAMETE" />
-            <img src={QualityPattern} alt="KUDASAY" />
+            <img src={Q_pattern} alt="KUDASAY" />
             <p>Quality Standard</p>
           </div>
         </div>

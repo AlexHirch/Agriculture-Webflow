@@ -51,9 +51,19 @@ export { default as BgImgService } from "./img/BgImgService.png";
 export { default as PageNotFoundBg } from "./img/PageNotFoundBgImg.png";
 export { default as PageNotFoundPattern } from "./img/PageNotFoundPattern.png";
 export { default as LimeBg } from "./img/lime.png";
-export { default as QualityPattern } from "./img/QualityPattern.png";
 export { default as HindOgorodda } from "./img/hind-ogorodda.png";
 export { default as DirtyHands } from "./img/Dirty hands.png";
 export { default as Pot } from "./img/Pot.png";
-
-
+export { default as Q_pattern } from "./img/Q-Pattern.svg"
+export { default as Strobery } from "./img/strobery.png"
+export { default as Portfolio_pattern } from "./img/Portfolio-Patterns.png"
+export { default as Service_pattern } from "./img/Service-pattern.png"
+export { default as Lime_pink } from "./img/Lime_Pink.png"
+export { default as Carrot } from "./img/carrot.png"
+export { default as Leaves } from "./img/leaves.png"
+export { default as Tomato } from "./img/tomato.png"
+export { default as Raspberry } from "./img/raspberry.png"
+export { default as Limon } from "./img/limon.png"
+export { default as Carrot2 } from "./img/carrot2.png"
+export { default as Aloe} from "./img/aloe.png"
+export { default as NewsPattern} from "./img/News_Pattern.png"

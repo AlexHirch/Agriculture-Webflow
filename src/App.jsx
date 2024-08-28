@@ -12,6 +12,8 @@ import ServisePage from "./path/servisePage";
 import PagesLinks from "./path/pagesLinks";
 import QualityStandart from "./path/qualityStandart";
 import PortfolioStandart from "./path/portfolio-standart";
+import PorfolioInfo from "./path/porfolio-info";
+import News from "./path/news";
 
 const App = () => {
   return (
@@ -28,6 +30,8 @@ const App = () => {
           <Route path="/pages/servise-page" element={<ServisePage />} />
           <Route path="/pages/quality-standart" element={<QualityStandart />} />
           <Route path="/projects" element={<PortfolioStandart />} />
+          <Route path="/projects/black-raspberry" element={<PorfolioInfo />} />
+          <Route path="/news" element={<News />} />
           <Route path="*" element={<PageNotFound />} />
         </Routes>
         <Footer/>
