@@ -55,3 +55,5 @@ export { default as QualityPattern } from "./img/QualityPattern.png";
 export { default as HindOgorodda } from "./img/hind-ogorodda.png";
 export { default as DirtyHands } from "./img/Dirty hands.png";
 export { default as Pot } from "./img/Pot.png";
+
+

@@ -11,6 +11,7 @@ import ShopSingle from "./path/shop-single";
 import ServisePage from "./path/servisePage";
 import PagesLinks from "./path/pagesLinks";
 import QualityStandart from "./path/qualityStandart";
+import PortfolioStandart from "./path/portfolio-standart";
 
 const App = () => {
   return (
@@ -26,6 +27,7 @@ const App = () => {
           <Route path="/shop/product" element={<ShopSingle />} />
           <Route path="/pages/servise-page" element={<ServisePage />} />
           <Route path="/pages/quality-standart" element={<QualityStandart />} />
+          <Route path="/projects" element={<PortfolioStandart />} />
           <Route path="*" element={<PageNotFound />} />
         </Routes>
         <Footer/>

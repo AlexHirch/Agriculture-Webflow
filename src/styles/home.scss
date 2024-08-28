@@ -1,7 +1,36 @@
 .App {
-  min-width: 1400px;
+  min-width: 1400px;  
 }
 
+*{
+  // .bubble {
+//   margin-left: 40px;
+//   position: relative;
+//   width: 120px;
+//   height: 80px;
+//   background: #32557f;
+//   border-radius: 10px;
+//   box-shadow: 0 0 10px black;  
+// }
+
+// .bubble {
+//   @extend .bubble;
+
+//   &::after {
+//     content: '';
+//     position: absolute;
+//     top: 0;
+//     left: 50%;
+//     width: 0;
+//     height: 0;
+//     border: 13px solid transparent;
+//     border-bottom-color: #32557f;
+//     border-top: 0;
+//     margin-left: -13px;
+//     margin-top: -13px;
+//   }
+// }
+}
 .bgc {
   overflow: hidden;
   height: max-content;
@@ -1801,13 +1830,10 @@
 }
 @keyframes backImgAnimated {
   0% {
-    top: -30px;
-  }
-  50% {
-    top: 30px;
+    background-color: white;
   }
   100% {
-    top: -30px;
+    background-color: #274c5b;
   }
 }
 .ServisePage {
@@ -1823,7 +1849,6 @@
     z-index: 0;
     height: 350px;
     img {
-      animation: backImgAnimated 5s infinite ease-in-out;
       width: 100%;
       position: absolute;
       &:first-child {
