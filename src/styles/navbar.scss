@@ -36,7 +36,7 @@
         &.active {
           color: #7eb693;
         }
-        &:hover{
+        &:hover {
           color: green;
         }
       }
@@ -48,7 +48,7 @@
         align-items: center;
         font-size: 16px;
         color: #274c5b;
-        &:hover{
+        &:hover {
           color: green;
         }
         span {
@@ -67,15 +67,15 @@
           display: grid;
           z-index: 5;
           background-color: white;
-          box-shadow:  0 5px 10px #274c5b;
+          box-shadow: 0 5px 10px #274c5b;
           overflow: hidden;
           width: 0px;
           height: 0px;
           position: absolute;
-          a{
+          a {
             padding: 5px;
             border-radius: 10px;
-            &:hover{
+            &:hover {
               color: green;
             }
           }
@@ -165,6 +165,66 @@
           color: white;
           background-color: #274c5b;
           border-radius: 40px;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 1400px) and (min-width: 1000px) {
+  .NavBar {
+    padding: 30px 50px;
+    .nav-left {
+      gap: 20px;
+      .logo {
+        width: auto;
+        height: 25px;
+        img {
+          height: 100%;
+        }
+      }
+      .navigation {
+        gap: 10px;
+        a {
+          font-size: 14px;
+        }
+        .p {
+          font-size: 14px;
+          span {
+            font-size: 18px;
+          }
+        }
+        .page-link {
+          .page {
+            a {
+              padding: 0 3px;
+              border-radius: 10px;
+            }
+          }
+        }
+      }
+    }
+    .search_cart {
+      height: auto;
+      gap: 10px;
+      form {
+        width: 300px;
+        height: 40px;
+        input {
+          font-size: 15px;
+        }
+        button {
+          height: 32px;
+          width: 32px;
+        }
+      }
+      .shopping-path {
+        height: 40px;
+        p {
+          span {
+            width: 32px;
+            height: 32px;
+          }
         }
       }
     }

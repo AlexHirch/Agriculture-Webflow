@@ -1,31 +1,32 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    text-decoration: none;
-    list-style: none;
-    transition: all .4s;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+  transition: all 0.4s;
 }
 
-.App{
-    overflow-x: hidden;
-}
-
-@font-face {
-    font-family: 'Yellowtail';
-    src: url("./resource/fonts/Yellowtail-Regular.ttf");
+.App {
+  overflow-x: hidden;
 }
 
 @font-face {
-    font-family: 'Roboto';
-    src: url("./resource/fonts/Roboto-Bold.ttf");
+  font-family: "Yellowtail";
+  src: url("./resource/fonts/Yellowtail-Regular.ttf");
+}
+
+@font-face {
+  font-family: "Roboto";
+  src: url("./resource/fonts/Roboto-Bold.ttf");
 }
 @font-face {
-    font-family: 'RobotoRegular';
-    src: url("./resource/fonts/Roboto-Regular.ttf");
+  font-family: "RobotoRegular";
+  src: url("./resource/fonts/Roboto-Regular.ttf");
 }
-.containCenter{
-    max-width: 1920px;
-    margin: auto;
-    position: relative;
+.containCenter {
+  max-width: 1440px;
+  margin: auto;
+  min-width: 1280px;
+  position: relative;
 }

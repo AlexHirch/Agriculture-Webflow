@@ -14,6 +14,7 @@ import QualityStandart from "./path/qualityStandart";
 import PortfolioStandart from "./path/portfolio-standart";
 import PorfolioInfo from "./path/porfolio-info";
 import News from "./path/news";
+import NewsSingleBlog from "./path/news-single-blog";
 
 const App = () => {
   return (
@@ -32,6 +33,7 @@ const App = () => {
           <Route path="/projects" element={<PortfolioStandart />} />
           <Route path="/projects/black-raspberry" element={<PorfolioInfo />} />
           <Route path="/news" element={<News />} />
+          <Route path="/news/blog" element={<NewsSingleBlog />} />
           <Route path="*" element={<PageNotFound />} />
         </Routes>
         <Footer/>

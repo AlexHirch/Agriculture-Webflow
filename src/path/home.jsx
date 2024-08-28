@@ -15,10 +15,7 @@ const Home = () => {
   return (
     <>
       <div className="bgc">
-        <div
-          className="HomePage containCenter"
-          style={{ backgroundImage: `url(${HomeBackground})` }}
-        >
+        <div className="HomePage containCenter">
           <div className="bimage">
             <img src={HomeBackground} alt="hz" />
             <img src={BackgroundPatterns} alt="hz" />

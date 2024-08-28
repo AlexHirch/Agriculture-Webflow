@@ -9,8 +9,8 @@ import {
 
 const Footer = () => {
   return (
-    <div className="footer">
-      <div className="subscribe containCenter">
+    <div className="footer containCenter">
+      <div className="subscribe">
         <div className="img">
           <img src={SubscribeBgImg} alt="BgImg" />
         </div>
