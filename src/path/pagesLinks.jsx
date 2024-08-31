@@ -1,7 +1,15 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { NavLink } from "react-router-dom";
 
 const PagesLinks = () => {
+  
+  const top0 = () => {
+    window.scrollTo({ top: 0, behavior: "instant" });
+  };
+
+  useEffect(() => {
+    top0();
+  }, []);
   return (
     <div
       style={{

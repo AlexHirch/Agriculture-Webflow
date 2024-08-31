@@ -2,8 +2,10 @@ import React from "react";
 import { HpImg2_1, HpImg2_2 } from "../resource";
 import { IoArrowForwardCircle } from "react-icons/io5";
 import { FaUser } from "react-icons/fa";
+import { useNavigate } from "react-router-dom";
 
 const HpNews = () => {
+  const navigate = useNavigate()
   return (
     <div className="HpNews containCenter ">
       <div className="top">
@@ -12,7 +14,7 @@ const HpNews = () => {
           <h2>Discover weekly content about organic food, & more</h2>
         </div>
         <div className="right">
-          <button>
+          <button  onClick={()=>navigate('/news')}>
             More News{" "}
             <span>
               <IoArrowForwardCircle />
@@ -40,7 +42,7 @@ const HpNews = () => {
               Lorem ipsum dolor sit amet, consectetur adipisicing elit.
               Distinctio, nostrum?
             </p>
-            <button>
+            <button  onClick={()=>navigate('/news/blog')}>
             Read More{" "}
               <span>
                 <IoArrowForwardCircle />
@@ -67,7 +69,7 @@ const HpNews = () => {
               Lorem ipsum dolor sit amet, consectetur adipisicing elit.
               Distinctio, nostrum?
             </p>
-            <button>
+            <button  onClick={()=>navigate('/news/blog')}>
               Read more{" "}
               <span>
                 <IoArrowForwardCircle />

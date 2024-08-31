@@ -1,0 +1,230 @@
+.ShopSingle {
+  width: 100%;
+  height: max-content;
+  position: relative;
+  .bgimg {
+    width: 100%;
+    display: flex;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    z-index: 0;
+    height: 300px;
+    img {
+      height: 100%;
+      position: absolute;
+      &:first-child {
+        position: relative;
+      }
+      &.bg1 {
+        height: 120%;
+        left: -35%;
+      }
+      &.bg2 {
+        right: -15%;
+        height: 120%;
+        transform: rotateY(180deg);
+      }
+    }
+    p {
+      position: absolute;
+      z-index: 2;
+      font-family: Roboto;
+      font-size: 50px;
+      color: #274c5b;
+    }
+  }
+}
+.single_shop_product {
+  width: 100%;
+  height: max-content;
+  padding: 50px 180px 0px 180px;
+  .top {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: start;
+    .left {
+      width: 100%;
+      img {
+        width: 100%;
+      }
+    }
+    .right {
+      width: 100%;
+      padding: 0 80px;
+      h2 {
+        font-family: Roboto;
+        font-size: 35px;
+        color: #274c5b;
+      }
+      .price {
+        display: flex;
+        align-items: center;
+        gap: 5px;
+        font-family: Roboto;
+        font-size: 20px;
+        color: #274c5b;
+        span {
+          font-size: 14px;
+          color: #778388;
+          font-family: Arial, Helvetica, sans-serif;
+          text-decoration: line-through;
+        }
+      }
+      .comment {
+        display: flex;
+        align-items: center;
+        gap: 5px;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 14px;
+        line-height: 20px;
+        color: #778388;
+        padding: 20px 0;
+      }
+      .quantity {
+        width: 100%;
+        height: auto;
+        display: flex;
+        align-items: center;
+        gap: 20px;
+        p {
+          font-family: Roboto;
+          font-size: 16px;
+          color: #274c5b;
+        }
+        input {
+          text-align: center;
+          width: 100px;
+          height: 50px;
+          border: 2px solid #274c5b;
+          border-radius: 10px;
+          font-family: Roboto;
+          color: #274c5b;
+          font-size: 20px;
+        }
+        button.Add_to_card {
+          padding: 0 30px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          height: 50px;
+          border-radius: 10px;
+          background-color: #274c5b;
+          font-family: Roboto;
+          font-size: 14px;
+          color: white;
+          border: none;
+          gap: 10px;
+          span {
+            padding: 3px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 20px;
+            background-color: #dedddd51;
+          }
+        }
+      }
+    }
+  }
+  .bot2 {
+    width: 100%;
+    height: max-content;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    padding: 50px 100px 0 100px;
+    text-align: center;
+    .btn {
+      display: flex;
+      width: 100%;
+      gap: 20px;
+      align-items: center;
+      justify-content: center;
+      padding: 0px 20px 20px 20px;
+      button {
+        font-family: Roboto;
+        padding: 15px 40px;
+        font-size: 18px;
+        color: #274c5b;
+        background-color: #eff6f1;
+        border-radius: 10px;
+        border: none;
+        &.active {
+          background-color: #274c5b;
+          color: white;
+        }
+      }
+    }
+    .text {
+      overflow: hidden;
+      position: relative;
+      width: 100%;
+      text-align: center;
+      height: max-content;
+      .pp {
+        width: 100%;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 14px;
+        line-height: 20px;
+        font-weight: 200;
+        position: absolute;
+        color: #778388;
+        left: -100%;
+        &.active {
+          left: 0;
+          position: relative;
+        }
+      }
+      p.info {
+        width: 100%;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 14px;
+        line-height: 20px;
+        font-weight: 200;
+        position: absolute;
+        color: #778388;
+        right: -100%;
+        &.active {
+          right: 0;
+          position: relative;
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 1000px) and (max-width: 1400px) {
+    .ShopSingle {
+      .bgimg {
+        height: 250px;
+      }
+    }
+    .single_shop_product {
+      width: 100%;
+      height: max-content;
+      padding: 50px 90px 0px 90px;
+      .top {
+        .right {
+          .comment {
+            font-size: 13px;
+            line-height: 17px;
+          }
+          .quantity {
+            gap: 10px;
+            p {
+              font-size: 14px;
+            }
+            input {
+              width: 70px;
+              height: 40px;
+            }
+            button.Add_to_card {
+              padding: 0 20px;
+            }
+          }
+        }
+      }
+    }
+  }

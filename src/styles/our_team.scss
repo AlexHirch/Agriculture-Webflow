@@ -1,0 +1,50 @@
+.OurTeam {
+  width: 100%;
+  height: max-content;
+  position: relative;
+  .bgimg {
+    width: 100%;
+    display: flex;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    z-index: 0;
+    height: 300px;
+    img {
+      width: 100%;
+      position: absolute;
+      &:first-child {
+        position: relative;
+      }
+      &.bg1 {
+        width: 110%;
+      }
+    }
+    p {
+      position: absolute;
+      z-index: 2;
+      font-family: Roboto;
+      font-size: 50px;
+      color: #274c5b;
+    }
+  }
+}
+.our_team {
+  padding-top: 100px;
+}
+
+@media (min-width: 1000px) and (max-width: 1400px) {
+  .OurTeam {
+    .bgimg {
+      height: 250px;
+      img {
+        &.bg1 {
+          width: 100%;
+        }
+      }
+    }
+  }
+  .our_team {
+    padding-top: 50px;
+  }
+}

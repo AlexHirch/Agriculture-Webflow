@@ -1,16 +1,17 @@
 import React from "react";
 import "../styles/navbar.scss"
 import { LogoOrganick } from "../resource";
-import { NavLink } from "react-router-dom";
+import { NavLink, useNavigate } from "react-router-dom";
 import { IoIosArrowForward } from "react-icons/io";
 import { FiSearch } from "react-icons/fi";
 import { TiShoppingCart } from "react-icons/ti";
 
 const Navbar = () => {
+  const navigate = useNavigate()
   return (
     <div className="NavBar containCenter">
       <div className="nav-left">
-        <div className="logo">
+        <div onClick={()=>navigate("/")} className="logo">
           <img src={LogoOrganick} alt="Logo-Organick" />
         </div>
         <div className="navigation">
@@ -33,6 +34,7 @@ const Navbar = () => {
                 <NavLink to={"/shop/product"}>ShopSingle</NavLink>
                 <NavLink to={"/pages/servise-page"}>Services</NavLink>
                 <NavLink to={"/pages/quality-standart"}>QualityStandart</NavLink>
+                <NavLink to={"/pages/contact-us"}>Contact Us</NavLink>
                 <NavLink to={"/jhbhdvsjbhj"}>PageNotFound</NavLink>
               </div>
             </div>

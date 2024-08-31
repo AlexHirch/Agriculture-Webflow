@@ -1,5 +1,6 @@
 import React from "react";
 import "./App.css";
+import "./styles/main.scss";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import { HomePage, Navbar } from "./index-components";
 import Footer from "./components/footer";
@@ -15,6 +16,7 @@ import PortfolioStandart from "./path/portfolio-standart";
 import PorfolioInfo from "./path/porfolio-info";
 import News from "./path/news";
 import NewsSingleBlog from "./path/news-single-blog";
+import ContactUs from "./path/contact";
 
 const App = () => {
   return (
@@ -34,9 +36,10 @@ const App = () => {
           <Route path="/projects/black-raspberry" element={<PorfolioInfo />} />
           <Route path="/news" element={<News />} />
           <Route path="/news/blog" element={<NewsSingleBlog />} />
+          <Route path="/pages/contact-us" element={<ContactUs />} />
           <Route path="*" element={<PageNotFound />} />
         </Routes>
-        <Footer/>
+        <Footer />
       </BrowserRouter>
     </div>
   );

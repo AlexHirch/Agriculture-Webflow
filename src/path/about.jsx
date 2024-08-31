@@ -1,4 +1,5 @@
-import React from "react";
+import React, { useEffect } from "react";
+import '../styles/about.scss'
 import {
   About1img,
   AboutBg,
@@ -14,9 +15,16 @@ import {
 } from "../resource";
 import { IoMdArrowRoundForward } from "react-icons/io";
 import TeamAbout from "../components/teamAbout";
-import { IoArrowForwardCircle } from "react-icons/io5";
 
 const About = () => {
+  
+  const top0 = () => {
+    window.scrollTo({ top: 0, behavior: "instant" });
+  };
+
+  useEffect(() => {
+    top0();
+  }, []);
   return (
     <>
       <div className="bgc EDEAEB">
@@ -24,7 +32,7 @@ const About = () => {
           <div className="bgimg">
             <img className="bg1" src={AboutUsBg} alt="YAMETE" />
             <img className="bg2" src={AboutUsBg} alt="YAMETE" />
-            <img src={AboutBg} alt="KUDASAY" />
+            <img className="pattern" src={AboutBg} alt="KUDASAY" />
             <p>About Us</p>
           </div>
         </div>

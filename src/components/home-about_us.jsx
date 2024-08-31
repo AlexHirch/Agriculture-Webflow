@@ -1,8 +1,11 @@
 import React from "react";
 import { HomeAboutUs, Icon1, Icon2 } from "../resource";
 import { IoMdArrowRoundForward } from "react-icons/io";
+import { useNavigate } from "react-router-dom";
 
 const HomeAbout_us = () => {
+  const navigate = useNavigate();
+
   return (
     <div className="HomeAbout_us containCenter">
       <img className="background" src={HomeAboutUs} alt="" />
@@ -36,8 +39,11 @@ const HomeAbout_us = () => {
             </div>
           </div>
         </div>
-        <button>
-          Shop Now <span><IoMdArrowRoundForward /></span>
+        <button onClick={() => navigate('/shop')}>
+          Shop Now{" "}
+          <span>
+            <IoMdArrowRoundForward />
+          </span>
         </button>
       </div>
     </div>

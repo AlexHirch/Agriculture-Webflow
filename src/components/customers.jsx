@@ -1,6 +1,7 @@
 import React from "react";
 import { Customer, Yban1 } from "../resource";
 import RateStar from "./Rate";
+import Slider from "./slider";
 
 const Customers = () => {
   return (
@@ -14,22 +15,7 @@ const Customers = () => {
           <p>Testimonial</p>
           <h1>What Our Customer Saying?</h1>
         </div>
-        <div className="box-2">
-          <img src={Customer} alt="" />
-          <RateStar />
-          <p>
-            Simply dummy text of the printing and typesetting industry. Lorem
-            Ipsum simply dummy text of the printing and typesetting industry.
-            Lorem Ipsum has been.
-          </p>
-          <h4>Sara Taylor</h4>
-          <h5>Consumer</h5>
-        </div>
-        <div className="box-3">
-          <span className="btn"></span>
-          <span className="btn active"></span>
-          <span className="btn"></span>
-        </div>
+        <Slider/>
         <hr />
       </div>
       <div className="contain2">

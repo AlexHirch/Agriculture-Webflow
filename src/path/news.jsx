@@ -1,11 +1,19 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { Aloe, HpImg2_1, HpImg2_2, NewsPattern } from "../resource";
 import { IoArrowForwardCircle } from "react-icons/io5";
 import { FaUser } from "react-icons/fa";
 import { useNavigate } from "react-router-dom";
+import "../styles/news.scss"
 
 const News = () => {
   const navigate = useNavigate()
+  const top0 = () => {
+    window.scrollTo({ top: 0, behavior: "instant" });
+  };
+
+  useEffect(() => {
+    top0();
+  }, []);
   return (
     <>
       <div className="newsbg bgc F7F7F9">

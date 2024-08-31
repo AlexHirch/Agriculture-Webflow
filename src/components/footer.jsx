@@ -1,4 +1,5 @@
 import React from "react";
+import "../styles/footer.scss";
 import { LogoOrganick, SubscribeBgImg } from "../resource";
 import {
   FaFacebook,

@@ -1,10 +1,18 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { PageNotFoundBg, PageNotFoundPattern } from "../resource";
 import { IoMdArrowRoundForward } from "react-icons/io";
 import { useNavigate } from "react-router-dom";
 
 const PageNotFound = () => {
   const navigate = useNavigate();
+  
+  const top0 = () => {
+    window.scrollTo({ top: 0, behavior: "instant" });
+  };
+
+  useEffect(() => {
+    top0();
+  }, []);
   return (
     <>
       <div className="bgc B5C3C6">

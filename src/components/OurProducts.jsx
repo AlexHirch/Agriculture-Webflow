@@ -2,8 +2,11 @@ import React from "react";
 import RateStar from "./Rate";
 import { Product1 } from "../resource";
 import { IoMdArrowRoundForward } from "react-icons/io";
+import { useNavigate } from "react-router-dom";
+import CardShop from "./mini-components/card";
 
 const OurProducts = () => {
+  const navigate = useNavigate();
   return (
     <div className="OurProducts containCenter">
       <p className="pp">
@@ -12,136 +15,16 @@ const OurProducts = () => {
         Our Products
       </p>
       <div className="cards">
-        <div className="card">
-          <p className="top">Vegetable</p>
-          <div className="img">
-            <img src={Product1} alt="" />
-          </div>
-          <p className="Name">Calabrese Broccoli</p>
-          <hr />
-          <div className="price">
-            <p>
-              <span>$20.00</span>$13.00
-            </p>
-            <div className="rate">
-              <RateStar />
-            </div>
-          </div>
-        </div>
-        <div className="card">
-          <p className="top">Vegetable</p>
-          <div className="img">
-            <img src={Product1} alt="" />
-          </div>
-          <p className="Name">Calabrese Broccoli</p>
-          <hr />
-          <div className="price">
-            <p>
-              <span>$20.00</span>$13.00
-            </p>
-            <div className="rate">
-              <RateStar />
-            </div>
-          </div>
-        </div>
-        <div className="card">
-          <p className="top">Vegetable</p>
-          <div className="img">
-            <img src={Product1} alt="" />
-          </div>
-          <p className="Name">Calabrese Broccoli</p>
-          <hr />
-          <div className="price">
-            <p>
-              <span>$20.00</span>$13.00
-            </p>
-            <div className="rate">
-              <RateStar />
-            </div>
-          </div>
-        </div>
-        <div className="card">
-          <p className="top">Vegetable</p>
-          <div className="img">
-            <img src={Product1} alt="" />
-          </div>
-          <p className="Name">Calabrese Broccoli</p>
-          <hr />
-          <div className="price">
-            <p>
-              <span>$20.00</span>$13.00
-            </p>
-            <div className="rate">
-              <RateStar />
-            </div>
-          </div>
-        </div>
-        <div className="card">
-          <p className="top">Vegetable</p>
-          <div className="img">
-            <img src={Product1} alt="" />
-          </div>
-          <p className="Name">Calabrese Broccoli</p>
-          <hr />
-          <div className="price">
-            <p>
-              <span>$20.00</span>$13.00
-            </p>
-            <div className="rate">
-              <RateStar />
-            </div>
-          </div>
-        </div>
-        <div className="card">
-          <p className="top">Vegetable</p>
-          <div className="img">
-            <img src={Product1} alt="" />
-          </div>
-          <p className="Name">Calabrese Broccoli</p>
-          <hr />
-          <div className="price">
-            <p>
-              <span>$20.00</span>$13.00
-            </p>
-            <div className="rate">
-              <RateStar />
-            </div>
-          </div>
-        </div>
-        <div className="card">
-          <p className="top">Vegetable</p>
-          <div className="img">
-            <img src={Product1} alt="" />
-          </div>
-          <p className="Name">Calabrese Broccoli</p>
-          <hr />
-          <div className="price">
-            <p>
-              <span>$20.00</span>$13.00
-            </p>
-            <div className="rate">
-              <RateStar />
-            </div>
-          </div>
-        </div>
-        <div className="card">
-          <p className="top">Vegetable</p>
-          <div className="img">
-            <img src={Product1} alt="" />
-          </div>
-          <p className="Name">Calabrese Broccoli</p>
-          <hr />
-          <div className="price">
-            <p>
-              <span>$20.00</span>$13.00
-            </p>
-            <div className="rate">
-              <RateStar />
-            </div>
-          </div>
-        </div>
+        <CardShop/>
+        <CardShop/>
+        <CardShop/>
+        <CardShop/>
+        <CardShop/>
+        <CardShop/>
+        <CardShop/>
+        <CardShop/>
       </div>
-      <button>
+      <button onClick={()=>navigate("shop")}>
         Load More
         <span>
           <IoMdArrowRoundForward />

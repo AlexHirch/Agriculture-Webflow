@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import "../styles/home.scss";
 import { BackgroundPatterns, HomeBackground } from "../resource";
 import { IoArrowForwardCircle } from "react-icons/io5";
@@ -10,8 +10,18 @@ import OfferForYou from "../components/offerforyou";
 import HpEcoTriendly from "../components/hpEcoTrindly";
 import HpElement1 from "../components/HpElement-1";
 import HpNews from "../components/HpNews";
+import { useNavigate } from "react-router-dom";
 
 const Home = () => {
+  
+  const top0 = () => {
+    window.scrollTo({ top: 0, behavior: "instant" });
+  };
+
+  useEffect(() => {
+    top0();
+  }, []);
+  const navigate = useNavigate()
   return (
     <>
       <div className="bgc">
@@ -23,7 +33,7 @@ const Home = () => {
           <div className="explore">
             <p>100% Natural Food</p>
             <p className="h2">Choose the best healthier way of life</p>
-            <button>
+            <button onClick={()=>navigate("/news")}>
               Explore Now{" "}
               <span>
                 <IoArrowForwardCircle />

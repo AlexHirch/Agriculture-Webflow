@@ -1,10 +1,27 @@
-import React from "react";
-import { Carrot, Leaves, Lime_pink, Limon, Portfolio_pattern, Raspberry, Strobery, Tomato } from "../resource";
+import React, { useEffect } from "react";
+import {
+  Carrot,
+  Leaves,
+  Lime_pink,
+  Limon,
+  Portfolio_pattern,
+  Raspberry,
+  Strobery,
+  Tomato,
+} from "../resource";
 import { IoIosArrowForward } from "react-icons/io";
 import { useNavigate } from "react-router-dom";
+import "../styles/projects.scss";
 
 const PortfolioStandart = () => {
-  const navigate = useNavigate()
+  const navigate = useNavigate();
+  const top0 = () => {
+    window.scrollTo({ top: 0, behavior: "instant" });
+  };
+
+  useEffect(() => {
+    top0();
+  }, []);
   return (
     <>
       {/* <div className="bubble"></div> */}
@@ -23,8 +40,8 @@ const PortfolioStandart = () => {
           <div className="img">
             <img src={Lime_pink} alt="" />
             <div className="btn">
-              <p>
-              <IoIosArrowForward />
+              <p onClick={() => navigate("/projects/black-raspberry")}>
+                <IoIosArrowForward />
               </p>
             </div>
           </div>
@@ -35,8 +52,8 @@ const PortfolioStandart = () => {
           <div className="img">
             <img src={Carrot} alt="" />
             <div className="btn">
-              <p>
-              <IoIosArrowForward />
+              <p onClick={() => navigate("/projects/black-raspberry")}>
+                <IoIosArrowForward />
               </p>
             </div>
           </div>
@@ -47,8 +64,8 @@ const PortfolioStandart = () => {
           <div className="img">
             <img src={Leaves} alt="" />
             <div className="btn">
-              <p>
-              <IoIosArrowForward />
+              <p onClick={() => navigate("/projects/black-raspberry")}>
+                <IoIosArrowForward />
               </p>
             </div>
           </div>
@@ -59,8 +76,8 @@ const PortfolioStandart = () => {
           <div className="img">
             <img src={Tomato} alt="" />
             <div className="btn">
-              <p>
-              <IoIosArrowForward />
+              <p onClick={() => navigate("/projects/black-raspberry")}>
+                <IoIosArrowForward />
               </p>
             </div>
           </div>
@@ -71,8 +88,8 @@ const PortfolioStandart = () => {
           <div className="img">
             <img src={Raspberry} alt="" />
             <div className="btn">
-              <p onClick={()=>navigate("/projects/black-raspberry")}>
-              <IoIosArrowForward />
+              <p onClick={() => navigate("/projects/black-raspberry")}>
+                <IoIosArrowForward />
               </p>
             </div>
           </div>
@@ -83,8 +100,8 @@ const PortfolioStandart = () => {
           <div className="img">
             <img src={Limon} alt="" />
             <div className="btn">
-              <p>
-              <IoIosArrowForward />
+              <p onClick={() => navigate("/projects/black-raspberry")}>
+                <IoIosArrowForward />
               </p>
             </div>
           </div>

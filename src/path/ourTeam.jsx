@@ -1,9 +1,17 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { gulushlagan, hind, OboyTayyor, Patterns, tuvak } from "../resource";
 import { FaFacebook, FaTwitter } from "react-icons/fa";
 import { IoLogoInstagram } from "react-icons/io";
+import "../styles/our_team.scss"
 
 const OurTeam = () => {
+  const top0 = () => {
+    window.scrollTo({ top: 0, behavior: "instant" });
+  };
+
+  useEffect(() => {
+    top0();
+  }, []);
   return (
     <>
       <div className="bgc">
@@ -27,8 +35,6 @@ const OurTeam = () => {
               the 1500s, when an unknown printer took a galley.
             </span>
           </p>
-          <br />
-          <br />
           <div className="boxes">
             <div className="box">
               <div className="img">

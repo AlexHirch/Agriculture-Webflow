@@ -1,0 +1,308 @@
+.PortfolioStandart {
+  width: 100%;
+  height: max-content;
+  position: relative;
+  .bgimg {
+    width: 100%;
+    display: flex;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    z-index: 0;
+    height: 300px;
+    img {
+      position: absolute;
+      width: 100%;
+      &.bg1 {
+        bottom: -80%;
+        left: -100px;
+        width: 70%;
+        rotate: 0deg;
+      }
+      &.bg2 {
+        bottom: 5%;
+        right: -35%;
+        width: 70%;
+        rotate: -90deg;
+      }
+    }
+    p {
+      position: absolute;
+      z-index: 2;
+      font-family: Roboto;
+      font-size: 50px;
+      color: #274c5b;
+    }
+  }
+}//media max-1400 min-1000 yes
+.Porfolio_Box {
+  width: 100%;
+  height: auto;
+  max-width: 1440px;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  row-gap: 40px;
+  padding: 100px 150px 0 150px;
+  .box {
+    width: 32%;
+    &:hover {
+      scale: 1.05;
+    }
+    .img {
+      border-radius: 20px;
+      position: relative;
+      overflow: hidden;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 20px;
+      height: 300px;
+      width: 100%;
+      img {
+        z-index: 0;
+        width: 140%;
+        position: absolute;
+      }
+      .btn {
+        overflow: hidden;
+        border-radius: 20px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 0%;
+        height: 0%;
+        z-index: 2;
+        background-color: rgba(255, 255, 255, 0);
+        p {
+          width: 0px;
+          height: 0px;
+          font-size: 25px;
+          background-color: #68a47f;
+          color: white;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          border-radius: 50px;
+        }
+      }
+      &:hover {
+        .btn {
+          width: 100%;
+          height: 100%;
+          z-index: 2;
+          background-color: rgba(255, 255, 255, 0.7);
+          box-shadow: 0 0 20px rgb(252, 252, 252);
+          p {
+            width: 50px;
+            height: 50px;
+          }
+        }
+      }
+    }
+    h4 {
+      padding-top: 20px;
+      font-size: 26px;
+      color: #274c5b;
+      padding-bottom: 10px;
+      font-family: Roboto;
+    }
+    p {
+      margin-top: -10px;
+      font-family: Yellowtail;
+      font-size: 20px;
+      color: #68a47f;
+    }
+  }
+}//media max-1400 min-1000 yes
+.PorfolioInfo {
+  width: 100%;
+  position: relative;
+  padding-bottom: 130px;
+  .close {
+    width: max-content;
+    height: max-content;
+    position: absolute;
+    top: 10px;
+    left: 100px;
+    z-index: 3;
+    cursor: pointer;
+    font-size: 60px;
+    color: #b5c3c6;
+  }
+  .img {
+    width: 100%;
+    position: relative;
+    height: 700px;
+    overflow: hidden;
+    img {
+      width: 100%;
+    }
+  }
+  .content_box {
+    bottom: 0px;
+    left: 10%;
+    width: 80%;
+    position: absolute;
+    height: max-content;
+    background-color: white;
+    border-radius: 20px;
+    overflow: hidden;
+    display: flex;
+    box-shadow: 0 0 50px #ddddddac;
+    .text {
+      width: 70%;
+      height: 100%;
+      padding: 50px;
+    }
+    .info {
+      padding: 50px;
+      width: 30%;
+      background-color: #fafafa;
+      p {
+        font-size: 20px;
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: 500;
+        line-height: 40px;
+        display: flex;
+        justify-content: space-between;
+        color: #274c5b;
+        span {
+          width: 60%;
+          font-size: 16px;
+          color: #778388;
+        }
+      }
+    }
+  }
+  h2 {
+    font-size: 40px;
+    font-family: Roboto;
+    color: #274c5b;
+    padding-bottom: 20px;
+  }
+  p {
+    font-size: 18px;
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+    color: #616c70;
+    line-height: 25px;
+  }
+}//media max-1400 min-1000 yes
+.PorfolioInfo1 {
+  width: 100%;
+  height: max-content;
+  padding: 80px 250px 0 250px;
+  .img {
+    margin-top: 40px;
+    width: 100%;
+    display: flex;
+    overflow: hidden;
+    border-radius: 20px;
+    align-items: center;
+    justify-content: center;
+    height: 500px;
+    img {
+      width: 110%;
+    }
+  }
+  h5 {
+    width: 100%;
+    text-align: center;
+    font-size: 14px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #778388;
+    font-weight: 100;
+    padding: 20px 0;
+  }
+  h2 {
+    font-size: 30px;
+    font-family: Roboto;
+    color: #274c5b;
+    padding-bottom: 20px;
+  }
+  p {
+    font-size: 18px;
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+    color: #616c70;
+    line-height: 30px;
+    padding-bottom: 20px;
+  }
+}//media max-1400 min-1000 yes
+
+@media (min-width: 1000px) and (max-width: 1400px) {
+  .PortfolioStandart {
+    .bgimg {
+      height: 250px;
+    }
+  }
+  .Porfolio_Box {
+    row-gap: 40px;
+    padding: 50px 100px 0 100px;
+    .box {
+      .img {
+        height: 250px;
+        img {
+          width: 150%;
+        }
+      }
+      h4 {
+        font-size: 24px;
+      }
+    }
+  }
+  .PorfolioInfo {
+    padding-bottom: 100px;
+    .close {
+      font-size: 40px;
+      color: rgba(0, 139, 2, 0.5);
+    }
+    .img {
+      height: 550px;
+    }
+    .content_box {
+      .text {
+        width: 65%;
+        padding: 30px;
+      }
+      .info {
+        width: 35%;
+        padding: 30px;
+        p {
+          font-size: 16px;
+          line-height: 30px;
+          span {
+            font-size: 14px;
+          }
+        }
+      }
+    }
+    h2 {
+      font-size: 35px;
+      padding-bottom: 15px;
+    }
+    p {
+      font-size: 16px;
+      line-height: 20px;
+    }
+  }
+  .PorfolioInfo1 {
+    padding: 60px 150px 0 150px;
+    .img {
+      margin-top: 20px;
+      height: 400px;
+      img {
+        width: 100%;
+      }
+    }
+    h5 {
+      padding: 15px 0;
+    }
+    h2 {
+      padding-bottom: 10px;
+    }
+    p {
+      font-size: 16px;
+    }
+  }
+}

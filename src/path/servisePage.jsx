@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import {
   BgImgService,
   IconForService1,
@@ -10,12 +10,20 @@ import {
   Olmalar,
   Pista,
   Service_pattern,
-  ShopPatternBg,
 } from "../resource";
 import { IoArrowForwardCircle } from "react-icons/io5";
 import { FaPlay } from "react-icons/fa";
+import "../styles/service.scss"
 
 const ServisePage = () => {
+  
+  const top0 = () => {
+    window.scrollTo({ top: 0, behavior: "instant" });
+  };
+
+  useEffect(() => {
+    top0();
+  }, []);
   return (
     <>
       <div className="bgc F3F3F5">

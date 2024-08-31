@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import {
   DirtyHands,
   HindOgorodda,
@@ -8,6 +8,13 @@ import {
 } from "../resource";
 
 const QualityStandart = () => {
+  const top0 = () => {
+    window.scrollTo({ top: 0, behavior: "instant" });
+  };
+
+  useEffect(() => {
+    top0();
+  }, []);
   return (
     <>
       <div className="bgc A7DADA">

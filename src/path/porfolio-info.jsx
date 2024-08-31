@@ -2,6 +2,7 @@ import React, { useEffect } from "react";
 import { Carrot2, Raspberry } from "../resource";
 import { IoChevronBackCircle } from "react-icons/io5";
 import { useNavigate } from "react-router-dom";
+import "../styles/projects.scss"
 
 const PorfolioInfo = () => {
   const navigate = useNavigate();

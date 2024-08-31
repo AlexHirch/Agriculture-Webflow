@@ -2,8 +2,10 @@ import React, { useEffect } from "react";
 import { IoChevronBackCircle } from "react-icons/io5";
 import { Bogbon } from "../resource";
 import { FaUser } from "react-icons/fa";
+import { useNavigate } from "react-router-dom";
 
 const NewsSingleBlog = () => {
+  const navigate = useNavigate();
   const top0 = () => {
     window.scrollTo({ top: 0, behavior: "instant" });
   };
@@ -14,7 +16,7 @@ const NewsSingleBlog = () => {
   return (
     <>
       <div className="NewsSingleBlog containCenter">
-        <div onClick={() => navigate("/projects")} className="close">
+        <div onClick={() => navigate("/news")} className="close">
           <IoChevronBackCircle />
         </div>
         <div className="img">

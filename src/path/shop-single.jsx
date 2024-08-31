@@ -1,10 +1,19 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { Anor, Product1, ShopPatternBg, SingleProduct } from "../resource";
 import RateStar from "../components/Rate";
 import { IoMdArrowRoundForward } from "react-icons/io";
+import "../styles/single-shop.scss"
 
 const ShopSingle = () => {
   const [vis, setVis] = useState(false)
+  
+  const top0 = () => {
+    window.scrollTo({ top: 0, behavior: "instant" });
+  };
+
+  useEffect(() => {
+    top0();
+  }, []);
   return (
     <>
       <div className="bgc F3F3F5">
@@ -49,7 +58,7 @@ const ShopSingle = () => {
             </div>
           </div>
         </div>
-        <div className="bot">
+        <div className="bot2">
           <div className="btn">
             <button onClick={()=> setVis(false)} className={vis ? "":"active"}>Product Description</button>
             <button onClick={()=> setVis(true)} className={vis ? "active":""}>Additional Info</button>
