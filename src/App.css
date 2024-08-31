@@ -27,6 +27,17 @@
 .containCenter {
   max-width: 1440px;
   margin: auto;
-  min-width: 1280px;
   position: relative;
+}
+
+@media (max-width: 1400px) and (min-width: 1000px) {
+  .containCenter {
+    max-width: 100%;
+  }
+}
+
+@media (min-width: 760px) and (max-width: 1000px) {
+  .containCenter{
+    max-width: 100%;
+  }
 }

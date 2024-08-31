@@ -200,7 +200,7 @@
       }
     }
   }
-} //media max-1400 min-1000 yes
+}
 @media (max-width: 1400px) and (min-width: 1000px) {
   .footer {
     padding: 30px 0;
@@ -226,4 +226,33 @@
       padding: 50px 100px 0 100px;
     }
   }
-}
+} //yes
+
+@media (min-width: 760px) and (max-width: 1000px) {
+  .footer {
+    padding-top: 50px;
+    .subscribe {
+      max-width: 100%;
+      width: 80%;
+      padding: 50px 40px;
+      .content {
+        p {
+          font-size: 25px;
+          width: 40%;
+        }
+        form {
+          width: 60%;
+          input {
+            width: 70%;
+          }
+          button {
+            width: 30%;
+          }
+        }
+      }
+    }
+    footer {
+      padding: 50px 50px 0 50px;
+    }
+  }
+} //yes
