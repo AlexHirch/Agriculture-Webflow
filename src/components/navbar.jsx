@@ -1,17 +1,25 @@
-import React from "react";
-import "../styles/navbar.scss"
+import React, { useState } from "react";
+import "../styles/navbar.scss";
 import { LogoOrganick } from "../resource";
 import { NavLink, useNavigate } from "react-router-dom";
 import { IoIosArrowForward } from "react-icons/io";
 import { FiSearch } from "react-icons/fi";
 import { TiShoppingCart } from "react-icons/ti";
+import { GoArrowUp } from "react-icons/go";
 
 const Navbar = () => {
-  const navigate = useNavigate()
+  const navigate = useNavigate();
+
+  const [scrollValue, setScrollValue] = useState(0)
+
+  window.onscroll = function () {
+    setScrollValue(document.documentElement.scrollTop)
+  };
+
   return (
     <div className="NavBar containCenter">
       <div className="nav-left">
-        <div onClick={()=>navigate("/")} className="logo">
+        <div onClick={() => navigate("/")} className="logo">
           <img src={LogoOrganick} alt="Logo-Organick" />
         </div>
         <div className="navigation">
@@ -26,14 +34,16 @@ const Navbar = () => {
               <NavLink className="p" to={"/pages"}>
                 Pages{" "}
                 <span>
-                <IoIosArrowForward />
+                  <IoIosArrowForward />
                 </span>
               </NavLink>
               <div className="page">
                 <NavLink to={"/pages/our-team"}>Our Team</NavLink>
                 <NavLink to={"/shop/product"}>ShopSingle</NavLink>
                 <NavLink to={"/pages/servise-page"}>Services</NavLink>
-                <NavLink to={"/pages/quality-standart"}>QualityStandart</NavLink>
+                <NavLink to={"/pages/quality-standart"}>
+                  QualityStandart
+                </NavLink>
                 <NavLink to={"/pages/contact-us"}>Contact Us</NavLink>
                 <NavLink to={"/jhbhdvsjbhj"}>PageNotFound</NavLink>
               </div>
@@ -65,6 +75,11 @@ const Navbar = () => {
             Cart (0)
           </p>
         </div>
+      </div>
+      <div className={scrollValue > 100 ? "btn-top active" : "btn-top"}>
+        <p>
+          <GoArrowUp />
+        </p>
       </div>
     </div>
   );

@@ -171,6 +171,27 @@
     }
   }
 }
+.btn-top {
+  position: fixed;
+  bottom: -100px;
+  right: 20px;
+  z-index: 5;
+  padding-top: 10px;
+  background-color: #76b767fe;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 30px;
+  border-radius: 50px;
+  color: #274c5b;
+  overflow: hidden;
+  transition: all .5s;
+  &.active{
+    bottom: 20px;
+  }
+}
 
 @media (max-width: 1400px) and (min-width: 1000px) {
   .NavBar {
