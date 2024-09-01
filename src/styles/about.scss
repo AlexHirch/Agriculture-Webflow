@@ -527,7 +527,7 @@
   .About.OfferForYou {
     padding: 50px 150px;
   }
-}
+} //netbook
 
 @media (min-width: 760px) and (max-width: 1000px) {
   .About {
@@ -573,4 +573,102 @@
       }
     }
   }
-}
+  .About2 {
+    position: relative;
+    height: max-content;
+    padding: 0 50px;
+    .BgGreen {
+      margin-top: 50px;
+      width: 500px;
+      height: 500px;
+      padding: 20px;
+      right: -200px;
+      .background {
+        width: 120%;
+      }
+    }
+    .content {
+      margin-top: 50px;
+      position: relative;
+      width: 55%;
+      text-align: right;
+      p.pp {
+        font-size: 20px;
+      }
+      p.h2 {
+        font-size: 30px;
+      }
+      p.small {
+        width: 100%;
+        line-height: 14px;
+        font-family: Arial, Helvetica, sans-serif;
+        color: #778388;
+      }
+      .cards {
+        .card {
+          .buttonHz {
+            position: relative;
+            right: -40%;
+          }
+          .small {
+            padding: 0 50px 0 150px;
+          }
+        }
+      }
+    }
+  }
+  .About2-1 {
+    margin-top: 250px;
+    padding: 50px;
+    .boxes {
+      padding: 0;
+      .box {
+        width: 23%;
+        padding: 20px 10px;
+        img {
+          width: 70px;
+          height: 70px;
+          padding: 10px;
+        }
+        p {
+          font-size: 12px;
+        }
+      }
+    }
+  }
+  .TeamAbout {
+    p.pp {
+      span.Yellowtail {
+        font-family: Yellowtail;
+        font-size: 20px;
+        color: #7eb693;
+      }
+      span.small {
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 13px;
+        font-weight: 200;
+        padding: 0 50px;
+        line-height: 17px;
+        color: #778388;
+      }
+    }
+    .containCenter {
+      padding: 30px 10px;
+      .boxes {
+        width: 100%;
+        justify-content: space-evenly;
+        .box {
+          width: 46%;
+          .icons {
+            .icon {
+              font-size: 25px;
+            }
+          }
+        }
+      }
+    }
+  }
+  .About.OfferForYou {
+    padding: 50px 100px;
+  }
+} //tablet
