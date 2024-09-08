@@ -6,6 +6,7 @@ import {
   Pot,
   Q_pattern,
 } from "../resource";
+import "../styles/quality-pageNotfound.scss"
 
 const QualityStandart = () => {
   const top0 = () => {

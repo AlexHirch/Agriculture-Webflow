@@ -2,6 +2,7 @@ import React, { useEffect } from "react";
 import { PageNotFoundBg, PageNotFoundPattern } from "../resource";
 import { IoMdArrowRoundForward } from "react-icons/io";
 import { useNavigate } from "react-router-dom";
+import "../styles/quality-pageNotfound.scss"
 
 const PageNotFound = () => {
   const navigate = useNavigate();

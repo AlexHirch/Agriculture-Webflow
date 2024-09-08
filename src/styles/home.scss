@@ -901,7 +901,7 @@
   }
 }
 
-@media (max-width: 1400px) and (min-width: 1000px) {
+@media (min-width: 1000px) {
   .swiperhome {
     width: 90%;
     margin: auto;
@@ -916,7 +916,7 @@
     color: #b5c3c6;
   }
   .containCenter {
-    max-width: 1400px;
+    max-width: 1360px;
     margin: auto;
     min-width: 1000px;
     position: relative;
@@ -1080,7 +1080,7 @@
     }
   }
 } //yes
-@media (min-width: 760px) and (max-width: 1000px) {
+@media (max-width: 1000px) {
   .HomePage {
     height: 350px;
     .bimage {

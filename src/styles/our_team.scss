@@ -33,7 +33,7 @@
   padding-top: 100px;
 }
 
-@media (min-width: 1000px) and (max-width: 1400px) {
+@media (max-width: 1360px) {
   .OurTeam {
     .bgimg {
       height: 250px;
@@ -46,5 +46,24 @@
   }
   .our_team {
     padding-top: 50px;
+  }
+}
+
+@media (max-width: 1000px) {
+  .OurTeam {
+    .bgimg {
+      height: 200px;
+      img {
+        &.bg1 {
+          width: 100%;
+        }
+      }
+    }
+  }
+  .our_team {
+    padding-top: 0px;
+    .pp{
+      padding-bottom: 20px;
+    }
   }
 }

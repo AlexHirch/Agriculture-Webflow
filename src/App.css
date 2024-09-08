@@ -25,12 +25,12 @@
   src: url("./resource/fonts/Roboto-Regular.ttf");
 }
 .containCenter {
-  max-width: 1440px;
+  max-width: 1920px;
   margin: auto;
   position: relative;
 }
 
-@media (max-width: 1400px) and (min-width: 1000px) {
+@media (max-width: 1440px) and (min-width: 1000px) {
   .containCenter {
     max-width: 100%;
   }

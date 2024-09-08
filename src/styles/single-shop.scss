@@ -195,36 +195,65 @@
   }
 }
 
-@media (min-width: 1000px) and (max-width: 1400px) {
-    .ShopSingle {
-      .bgimg {
-        height: 250px;
-      }
+@media (max-width: 1360px) {
+  .ShopSingle {
+    .bgimg {
+      height: 250px;
     }
-    .single_shop_product {
-      width: 100%;
-      height: max-content;
-      padding: 50px 90px 0px 90px;
-      .top {
-        .right {
-          .comment {
-            font-size: 13px;
-            line-height: 17px;
+  }
+  .single_shop_product {
+    width: 100%;
+    height: max-content;
+    padding: 50px 90px 0px 90px;
+    .top {
+      .right {
+        .comment {
+          font-size: 13px;
+          line-height: 17px;
+        }
+        .quantity {
+          gap: 10px;
+          p {
+            font-size: 14px;
           }
-          .quantity {
-            gap: 10px;
-            p {
-              font-size: 14px;
-            }
-            input {
-              width: 70px;
-              height: 40px;
-            }
-            button.Add_to_card {
-              padding: 0 20px;
-            }
+          input {
+            width: 70px;
+            height: 40px;
+          }
+          button.Add_to_card {
+            padding: 0 20px;
           }
         }
       }
     }
   }
+}
+
+@media (max-width: 1000px) {
+  .ShopSingle {
+    .bgimg {
+      height: 200px;
+    }
+  }
+  .single_shop_product {
+    width: 100%;
+    height: max-content;
+    padding: 50px;
+    .top {
+      width: 100%;
+      align-items: start;
+      justify-content: start;
+      flex-direction: column;
+      .right {
+        width: 100%;
+        padding: 0;
+        .content {
+          width: 100%;
+        }
+      }
+    }
+    .bot2 {
+      padding: 50px;
+    }
+  }
+}

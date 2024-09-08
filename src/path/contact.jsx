@@ -34,12 +34,12 @@ const ContactUs = () => {
             <img className="bg1" src={Apelsin} alt="YAMETE" />
             <img className="bg2" src={Apelsin} alt="YAMETE" />
             <img className="pattern" src={ApelsinPattern} alt="KUDASAY" />
-            <p>Shop Single</p>
+            <p>Contact Us</p>
           </div>
         </div>
       </div>
 
-      <div className="single_shop_product containCenter">
+      <div className="single_shop_product1 containCenter">
         <div className="top">
           <div className="left">
             <img src={Banan11} alt="" />

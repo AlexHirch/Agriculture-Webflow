@@ -45,8 +45,7 @@
   }
 }
 
-
-@media (min-width: 1000px) and (max-width: 1400px) {
+@media (max-width: 1360px) {
   .Shop {
     .bgimg {
       height: 250px;
@@ -97,5 +96,16 @@
         }
       }
     }
+  }
+}
+
+@media (max-width: 1000px) {
+  .Shop {
+    .bgimg {
+      height: 200px;
+    }
+  }
+  .shop.OurProducts {
+    padding: 20px 50px;
   }
 }

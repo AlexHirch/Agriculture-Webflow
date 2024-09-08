@@ -3,8 +3,10 @@ import { gulushlagan, hind, OboyTayyor, Patterns, tuvak } from "../resource";
 import { FaFacebook, FaTwitter } from "react-icons/fa";
 import { IoLogoInstagram } from "react-icons/io";
 import "../styles/our_team.scss"
+import { useNavigate } from "react-router-dom";
 
 const OurTeam = () => {
+  const navigate = useNavigate()
   const top0 = () => {
     window.scrollTo({ top: 0, behavior: "instant" });
   };
@@ -36,7 +38,7 @@ const OurTeam = () => {
             </span>
           </p>
           <div className="boxes">
-            <div className="box">
+            <div onClick={() => navigate("/pages/our-team/#customer")} className="box">
               <div className="img">
                 <img src={hind} alt="" />
               </div>
@@ -53,7 +55,7 @@ const OurTeam = () => {
                 </div>
               </div>
             </div>
-            <div className="box">
+            <div onClick={() => navigate("/pages/our-team/#customer")} className="box">
               <div className="img">
                 <img src={hind} alt="" />
               </div>
@@ -70,7 +72,7 @@ const OurTeam = () => {
                 </div>
               </div>
             </div>
-            <div className="box">
+            <div onClick={() => navigate("/pages/our-team/#customer")} className="box">
               <div className="img">
                 <img src={hind} alt="" />
               </div>
@@ -87,7 +89,7 @@ const OurTeam = () => {
                 </div>
               </div>
             </div>
-            <div className="box">
+            <div onClick={() => navigate("/pages/our-team/#customer")} className="box">
               <div className="img">
                 <img src={hind} alt="" />
               </div>
@@ -104,7 +106,7 @@ const OurTeam = () => {
                 </div>
               </div>
             </div>
-            <div className="box">
+            <div onClick={() => navigate("/pages/our-team/#customer")} className="box">
               <div className="img">
                 <img src={gulushlagan} alt="" />
               </div>
@@ -124,7 +126,7 @@ const OurTeam = () => {
                 </div>
               </div>
             </div>
-            <div className="box">
+            <div onClick={() => navigate("/pages/our-team/#customer")} className="box">
               <div className="img">
                 <img src={tuvak} alt="" />
               </div>

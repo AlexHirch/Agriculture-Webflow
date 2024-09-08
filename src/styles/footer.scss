@@ -201,7 +201,7 @@
     }
   }
 }
-@media (max-width: 1400px) and (min-width: 1000px) {
+@media (min-width: 1000px) {
   .footer {
     padding: 30px 0;
     .subscribe {
@@ -228,7 +228,7 @@
   }
 } //yes
 
-@media (min-width: 760px) and (max-width: 1000px) {
+@media (max-width: 1000px) {
   .footer {
     padding-top: 50px;
     .subscribe {

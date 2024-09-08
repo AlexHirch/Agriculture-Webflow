@@ -383,7 +383,7 @@
   }
 }
 
-@media (min-width: 1000px) and (max-width: 1400px) {
+@media (max-width: 1360px) {
   .About {
     .bgimg {
       height: 250px;
@@ -529,7 +529,7 @@
   }
 } //netbook
 
-@media (min-width: 760px) and (max-width: 1000px) {
+@media (max-width: 1000px) {
   .About {
     .bgimg {
       height: 180px;
@@ -662,6 +662,17 @@
           .icons {
             .icon {
               font-size: 25px;
+            }
+          }
+          .img {
+            width: 100%;
+            height: 400px;
+            overflow: hidden;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            img {
+              height: 100%;
             }
           }
         }

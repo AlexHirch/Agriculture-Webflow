@@ -270,7 +270,7 @@
   }
 }
 
-@media (min-width: 1000px) and (max-width: 1400px) {
+@media (max-width: 1360px) {
   .newsbg {
     margin-bottom: -50px;
   }
@@ -367,6 +367,123 @@
   }
   .NewsSingleBlog1 {
     padding: 50px 150px 0 150px;
+    h4 {
+      font-size: 18px;
+    }
+    h2 {
+      font-size: 25px;
+      padding-bottom: 15px;
+    }
+    p {
+      font-size: 16px;
+      line-height: 25px;
+      padding-bottom: 15px;
+    }
+  }
+}
+
+@media (max-width: 1000px) {
+  .newsbg {
+    margin-bottom: -30px;
+  }
+  .News {
+    .bgimg {
+      height: 200px;
+      img {
+        position: absolute;
+        width: 100%;
+        &.bg1 {
+          bottom: -370px;
+          left: -270px;
+        }
+        &.bg2 {
+          bottom: -220px;
+          right: -250px;
+        }
+        &.pattern {
+          width: 120%;
+          top: 0px;
+        }
+      }
+      p {
+        font-size: 40px;
+      }
+    }
+  }
+  .News1 {
+    .bot {
+      padding: 40px 0;
+      display: flex;
+      .box {
+        width: 48%;
+        .img {
+          p {
+            padding: 5px;
+            width: 50px;
+            height: 50px;
+            font-size: 16px;
+            span {
+              font-size: 12px;
+            }
+          }
+        }
+        .content {
+          bottom: -20%;
+          padding: 20px;
+          .author {
+            padding-bottom: 10px;
+            font-size: 14px;
+          }
+          h2 {
+            font-size: 18px;
+          }
+          .text {
+            font-size: 14px;
+          }
+          button {
+            margin-top: 10px;
+            padding: 10px 10px 10px 0;
+            font-size: 18px;
+            border-radius: 10px;
+          }
+        }
+      }
+    }
+    
+  }
+  .NewsSingleBlog {
+    padding-bottom: 100px;
+    .close {
+      left: 20px;
+      top: 30px;
+      color: #4b7056ba;
+      font-size: 60px;
+    }
+    .img {
+      height: 450px;
+    }
+    .content_box {
+      .text {
+        padding: 30px;
+      }
+      h5 {
+        font-size: 13px;
+        padding-bottom: 10px;
+      }
+      h2 {
+        font-size: 35px;
+        font-family: Roboto;
+        color: #274c5b;
+        padding-bottom: 20px;
+      }
+      p {
+        width: 90%;
+        line-height: 20px;
+      }
+    }
+  }
+  .NewsSingleBlog1 {
+    padding: 50px 120px 0 120px;
     h4 {
       font-size: 18px;
     }

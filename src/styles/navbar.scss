@@ -188,12 +188,15 @@
   color: #274c5b;
   overflow: hidden;
   transition: all .5s;
+  &:hover {
+   background-color: #b5e5abfe;
+  }
   &.active{
     bottom: 20px;
   }
 }
 
-@media (max-width: 1400px) and (min-width: 1000px) {
+@media (min-width: 1000px) {
   .NavBar {
     padding: 30px 50px;
     .nav-left {
@@ -253,7 +256,7 @@
   }
 }
 
-@media (min-width: 760px) and (max-width: 1000px) {
+@media (max-width: 1000px) {
   .NavBar {
     position: relative;
     justify-content: space-between;

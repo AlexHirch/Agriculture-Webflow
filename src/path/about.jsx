@@ -1,5 +1,5 @@
 import React, { useEffect } from "react";
-import '../styles/about.scss'
+import "../styles/about.scss";
 import {
   About1img,
   AboutBg,
@@ -15,9 +15,10 @@ import {
 } from "../resource";
 import { IoMdArrowRoundForward } from "react-icons/io";
 import TeamAbout from "../components/teamAbout";
+import { useNavigate } from "react-router-dom";
 
 const About = () => {
-  
+  const navigate = useNavigate();
   const top0 = () => {
     window.scrollTo({ top: 0, behavior: "instant" });
   };
@@ -68,7 +69,7 @@ const About = () => {
                 </div>
               </div>
             </div>
-            <button>
+            <button onClick={() => navigate("/about/#product")}>
               Explore More{" "}
               <span>
                 <IoMdArrowRoundForward />
@@ -140,7 +141,9 @@ const About = () => {
           </div>
         </div>
       </div>
-      <TeamAbout />
+      <div onClick={() => navigate("/about/#customer")} className="customer_onclick">
+        <TeamAbout />
+      </div>
       <div className="bgc a274C5B">
         <div className="About OfferForYou containCenter">
           <div className="top">
@@ -149,25 +152,25 @@ const About = () => {
           </div>
           <div className="bot">
             <div className="cards">
-              <div className="card">
+              <div onClick={() => navigate("/shop/product")} className="card">
                 <div className="img">
                   <img src={kurkuma} alt="" />
                 </div>
                 <p className="Name">Spicy</p>
               </div>
-              <div className="card">
+              <div onClick={() => navigate("/shop/product")} className="card">
                 <div className="img">
                   <img src={kurkuma} alt="" />
                 </div>
                 <p className="Name">Nuts & Feesd</p>
               </div>
-              <div className="card">
+              <div onClick={() => navigate("/shop/product")} className="card">
                 <div className="img">
                   <img src={kurkuma} alt="" />
                 </div>
                 <p className="Name">Fruits</p>
               </div>
-              <div className="card">
+              <div onClick={() => navigate("/shop/product")} className="card">
                 <div className="img">
                   <img src={kurkuma} alt="" />
                 </div>

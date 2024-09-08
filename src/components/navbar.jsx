@@ -10,10 +10,10 @@ import { GoArrowUp } from "react-icons/go";
 const Navbar = () => {
   const navigate = useNavigate();
 
-  const [scrollValue, setScrollValue] = useState(0)
+  const [scrollValue, setScrollValue] = useState(0);
 
   window.onscroll = function () {
-    setScrollValue(document.documentElement.scrollTop)
+    setScrollValue(document.documentElement.scrollTop);
   };
 
   return (
@@ -76,7 +76,12 @@ const Navbar = () => {
           </p>
         </div>
       </div>
-      <div className={scrollValue > 100 ? "btn-top active" : "btn-top"}>
+      <div
+        onClick={() => {
+          window.scrollTo({ top: 0, behavior: "smooth" });
+        }}
+        className={scrollValue > 100 ? "btn-top active" : "btn-top"}
+      >
         <p>
           <GoArrowUp />
         </p>
