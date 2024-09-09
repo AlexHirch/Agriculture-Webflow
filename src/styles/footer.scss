@@ -256,3 +256,92 @@
     }
   }
 } //yes
+
+@media (max-width: 760px) {
+  .footer {
+    .subscribe {
+      max-width: 100%;
+      width: 90%;
+      border-radius: 20px;
+      padding: 20px;
+      .img {
+        img {
+          width: 300%;
+          position: absolute;
+        }
+      }
+      .content {
+        flex-wrap: wrap;
+        p {
+          font-family: Roboto;
+          font-size: 30px;
+          width: 100%;
+          color: white;
+        }
+        form {
+          width: 100%;
+          input {
+            width: 60%;
+            height: 50px;
+            font-size: 12px;
+          }
+          button {
+            width: 40%;
+            height: 50px;
+          }
+        }
+      }
+    }
+    footer {
+      padding: 30px;
+      .top {
+        width: 100%;
+        flex-wrap: wrap;
+        position: relative;
+        padding-top: 250px;
+        padding-bottom: 100px;
+        .left {
+          width: 100%;
+          display: grid;
+          padding-left: 20px;
+          ul {
+            width: 100%;
+            display: grid;
+            padding-right: 20px;
+            row-gap: 20px;
+            li {
+              width: 100%;
+              text-align: left;
+            }
+          }
+        }
+        .right {
+          padding-top: 20px;
+          width: 100%;
+          display: grid;
+          ul {
+            width: 100%;
+            display: grid;
+            padding-right: 20px;
+            row-gap: 20px;
+            li {
+              width: 100%;
+              text-align: left;
+            }
+          }
+        }
+        .center {
+          top: 0;
+          position: absolute;
+          width: 100%;
+          padding: 20px;
+          border-left: 1px;
+          border-right: 1px;
+          p {
+            padding: 0 20px;
+          }
+        }
+      }
+    }
+  }
+} //yes

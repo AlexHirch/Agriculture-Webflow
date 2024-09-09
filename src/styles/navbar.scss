@@ -183,6 +183,7 @@
   right: 20px;
   z-index: 5;
   padding-top: 10px;
+  opacity: 0.3;
   background-color: #76b767fe;
   width: 50px;
   height: 50px;
@@ -195,7 +196,7 @@
   overflow: hidden;
   transition: all 0.5s;
   &:hover {
-    background-color: #b5e5abfe;
+    opacity: 1;
   }
   &.active {
     bottom: 20px;
