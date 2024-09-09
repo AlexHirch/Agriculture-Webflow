@@ -2,11 +2,12 @@ import React, { useEffect, useState } from "react";
 import { Anor, Product1, ShopPatternBg, SingleProduct } from "../resource";
 import RateStar from "../components/Rate";
 import { IoMdArrowRoundForward } from "react-icons/io";
-import "../styles/single-shop.scss"
+import "../styles/single-shop.scss";
 
-const ShopSingle = () => {
-  const [vis, setVis] = useState(false)
-  
+const ShopSingle = ({ cart1, setCart1 }) => {
+  const [vis, setVis] = useState(false);
+  const [input1, setInput1] = useState(1);
+
   const top0 = () => {
     window.scrollTo({ top: 0, behavior: "instant" });
   };
@@ -47,8 +48,21 @@ const ShopSingle = () => {
               </p>
               <div className="quantity">
                 <p>Quantity :</p>
-                <input type="number" defaultValue={1} min={1} />
-                <button className="Add_to_card">
+                <input
+                  onChange={(e) => {
+                    setInput1(e.target.value);
+                  }}
+                  type="number"
+                  value={input1}
+                  defaultValue={1}
+                  min={1}
+                />
+                <button
+                  onClick={() => {
+                    setCart1(input1);
+                  }}
+                  className="Add_to_card"
+                >
                   Add to Cart{" "}
                   <span>
                     <IoMdArrowRoundForward />
@@ -60,8 +74,18 @@ const ShopSingle = () => {
         </div>
         <div className="bot2">
           <div className="btn">
-            <button onClick={()=> setVis(false)} className={vis ? "":"active"}>Product Description</button>
-            <button onClick={()=> setVis(true)} className={vis ? "active":""}>Additional Info</button>
+            <button
+              onClick={() => setVis(false)}
+              className={vis ? "" : "active"}
+            >
+              Product Description
+            </button>
+            <button
+              onClick={() => setVis(true)}
+              className={vis ? "active" : ""}
+            >
+              Additional Info
+            </button>
           </div>
           <div className="text">
             <p className={vis ? "pp" : "pp active"}>

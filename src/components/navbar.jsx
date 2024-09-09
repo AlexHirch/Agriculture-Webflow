@@ -7,10 +7,11 @@ import { FiSearch } from "react-icons/fi";
 import { TiShoppingCart } from "react-icons/ti";
 import { GoArrowUp } from "react-icons/go";
 
-const Navbar = () => {
+const Navbar = ({ cart1, setCart1 }) => {
   const navigate = useNavigate();
 
   const [scrollValue, setScrollValue] = useState(0);
+  const [vis, setVis] = useState(false);
 
   window.onscroll = function () {
     setScrollValue(document.documentElement.scrollTop);
@@ -19,10 +20,16 @@ const Navbar = () => {
   return (
     <div className="NavBar containCenter">
       <div className="nav-left">
+        <button onClick={()=>setVis(true)} className="barsbtn">
+          bars
+        </button>
         <div onClick={() => navigate("/")} className="logo">
           <img src={LogoOrganick} alt="Logo-Organick" />
         </div>
-        <div className="navigation">
+        <div className={vis ?"navigation active" : "navigation" }>
+          <button onClick={()=>setVis(false)} className="xmark">
+            x
+          </button>
           <div className="page-link">
             <NavLink to={"/"}>Home</NavLink>
           </div>
@@ -72,7 +79,7 @@ const Navbar = () => {
             <span>
               <TiShoppingCart />
             </span>
-            Cart (0)
+            Cart ({cart1})
           </p>
         </div>
       </div>

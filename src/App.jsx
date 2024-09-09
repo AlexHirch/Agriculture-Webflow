@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import "./App.css";
 import "./styles/main.scss";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
@@ -19,17 +19,18 @@ import NewsSingleBlog from "./path/news-single-blog";
 import ContactUs from "./path/contact";
 
 const App = () => {
+  const [cart1, setCart1] = useState(0)
   return (
     <div className="App">
       <BrowserRouter>
-        <Navbar />
+        <Navbar cart1={cart1} setCart1={setCart1} />
         <Routes>
           <Route path="/" element={<HomePage />} />
           <Route path="/about" element={<About />} />
           <Route path="/shop" element={<Shop />} />
           <Route path="/pages" element={<PagesLinks />} />
           <Route path="/pages/our-team" element={<OurTeam />} />
-          <Route path="/shop/product" element={<ShopSingle />} />
+          <Route path="/shop/product" element={<ShopSingle cart1={cart1} setCart1={setCart1} />} />
           <Route path="/pages/servise-page" element={<ServisePage />} />
           <Route path="/pages/quality-standart" element={<QualityStandart />} />
           <Route path="/projects" element={<PortfolioStandart />} />
