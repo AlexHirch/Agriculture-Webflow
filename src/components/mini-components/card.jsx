@@ -2,24 +2,26 @@ import React from "react";
 import RateStar from "../Rate";
 import { useNavigate } from "react-router-dom";
 import { Product1 } from "../../resource";
-import "../../styles/home.scss"
+import "../../styles/home.scss";
 
 const CardShop = () => {
-    const navigate = useNavigate()
+  const navigate = useNavigate();
   return (
-    <div onClick={() => navigate("/shop/product")} className="card">
+    <div className="card">
       <p className="top">Vegetable</p>
-      <div className="img">
+      <div onClick={() => navigate("/shop/product")} className="img">
         <img src={Product1} alt="" />
       </div>
-      <p className="Name">Calabrese Broccoli</p>
-      <hr />
-      <div className="price">
-        <p>
-          <span>$20.00</span>$13.00
-        </p>
-        <div className="rate">
-          <RateStar />
+      <div className="padding-10">
+        <p onClick={() => navigate("/shop/product")} className="Name">Calabrese Broccoli</p>
+        <hr />
+        <div className="price">
+          <p>
+            <span>$20.00</span>$13.00
+          </p>
+          <div className="rate">
+            <RateStar />
+          </div>
         </div>
       </div>
     </div>

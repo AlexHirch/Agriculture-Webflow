@@ -7,17 +7,17 @@ const HpElement1 = () => {
   return (
     <div className="bgc f1f8f4">
       <div className='HpElement1 containCenter'>
-        <div className="box">
+        <div onClick={()=>navigate('/news/blog')} className="box">
             <img src={ImgHpE1_1} alt="" />
-            <button  onClick={()=>navigate('/news/blog')}>Organic Juice</button>
+            <button>Organic Juice</button>
         </div>
-        <div className="box">
+        <div onClick={()=>navigate('/news/blog')} className="box">
             <img src={ImgHpE1_2} alt="" />
-            <button  onClick={()=>navigate('/news/blog')}>Organic Food</button>
+            <button>Organic Food</button>
         </div>
-        <div className="box">
+        <div onClick={()=>navigate('/news/blog')} className="box">
             <img src={ImgHpE1_3} alt="" />
-            <button  onClick={()=>navigate('/news/blog')}>Nuts Cookis</button>
+            <button>Nuts Cookis</button>
         </div>
     </div>
     </div>

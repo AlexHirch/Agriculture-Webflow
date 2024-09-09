@@ -6,14 +6,13 @@
   align-items: center;
   padding-top: 100px;
   justify-content: center;
-  .subscribe {
-    max-width: 1440px;
-    width: 70%;
-    border-radius: 20px;
-    height: max-content;
-    padding: 80px 50px;
+  .subscribe.br1{
+    width: 1400px;
+    padding: 105px 71px;
+    border-radius: 30px;
     position: relative;
     overflow: hidden;
+    margin-bottom: 117px;
     .img {
       width: 100%;
       position: relative;
@@ -22,63 +21,72 @@
       align-items: center;
       justify-content: center;
       img {
-        width: 120%;
+        width: 200%;
         position: absolute;
       }
     }
     .content {
+      margin-left: 3%;
+      width: 94%;
       position: relative;
       z-index: 3;
       display: flex;
       align-items: center;
       justify-content: space-between;
-      p {
+      p.sub {
+        width: auto;
+        height: max-content;
         font-family: Roboto;
-        font-size: 35px;
-        width: 250px;
+        font-size: 50px;
+        line-height: 58.59px;
         color: white;
       }
-      form {
-        width: 450px;
+      form.sub {
+        width: max-content;
         height: max-content;
         display: flex;
         gap: 10px;
         input {
-          width: 295px;
-          height: 60px;
-          font-size: 16px;
+          width: 349px;
+          height: 80px;
+          font-size: 18px;
           outline: none;
-          padding: 20px;
+          font-style: italic;
+          padding: 28px 23px;
           border: none;
-          border-radius: 10px;
+          border-radius: 16px;
+          &::placeholder{
+            color: #ABABAB;
+          }
           &:focus {
             background-color: rgb(210, 255, 255);
           }
         }
         button {
-          width: 145px;
-          height: 60px;
+          width: max-content;
+          padding: 28px 47px 29px 47px;
+          font-size: 20px;
           background-color: #274c5b;
+          font-family: Roboto;
           color: white;
           border: none;
-          border-radius: 10px;
+          border-radius: 16px;
         }
       }
     }
   }
-  footer {
+  footer.footer {
+    max-width: 100%;
     width: 100%;
     height: max-content;
-    padding: 100px 200px 0 200px;
+    padding: 0;
     display: grid;
     align-items: center;
     .top {
       width: 100%;
-      height: max-content;
       display: flex;
       align-items: start;
       justify-content: space-between;
-      padding-bottom: 150px;
       .left {
         width: 25%;
         display: grid;
@@ -180,7 +188,6 @@
       }
     }
     .bot {
-      position: absolute;
       bottom: 0;
       left: 0;
       width: 100%;

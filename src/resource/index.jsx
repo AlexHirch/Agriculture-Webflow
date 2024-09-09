@@ -6,6 +6,7 @@ export { default as PhotoBack1 } from "./img/Photo (1).png";
 export { default as HomeAboutUs } from "./img/HomeAboutUs.png";
 export { default as Icon1 } from "./img/Icon.png";
 export { default as Icon2 } from "./img/Icon (1).png";
+export { default as Product0 } from "./img/product1.png";
 export { default as Product1 } from "./img/product.png";
 export { default as Counter1 } from "./img/Counter.svg";
 export { default as BackCutomer } from "./img/BackgroundCustomer.png";
@@ -76,3 +77,4 @@ export { default as Mail } from "./img/mail.png"
 export { default as BigLeaf } from "./img/leaf-big.png"
 export { default as Bgpatpas } from "./img/bgpatpas.svg"
 export { default as PasswordPhoto } from "./img/passwordPhoto.jpg"
+export { default as ShopingCart } from "./img/shoppingcart.svg"

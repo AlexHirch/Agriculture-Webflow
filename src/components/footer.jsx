@@ -11,19 +11,19 @@ import {
 const Footer = () => {
   return (
     <div className="footer containCenter">
-      <div className="subscribe">
+      <div className="subscribe br1">
         <div className="img">
           <img src={SubscribeBgImg} alt="BgImg" />
         </div>
         <div className="content">
-          <p>Subscribe to our Newsletter</p>
-          <form>
+          <p className="sub">Subscribe to <br /> our Newsletter</p>
+          <form className="sub">
             <input type="email" placeholder="Your Email Address" />
             <button>Subscribe</button>
           </form>
         </div>
       </div>
-      <footer className="containCenter">
+      <footer className="containCenter footer">
         <div className="top">
           <div className="left">
             <ul>

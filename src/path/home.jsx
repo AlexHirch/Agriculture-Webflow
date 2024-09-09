@@ -11,6 +11,7 @@ import HpEcoTriendly from "../components/hpEcoTrindly";
 import HpElement1 from "../components/HpElement-1";
 import HpNews from "../components/HpNews";
 import { useNavigate } from "react-router-dom";
+import { FiArrowRight } from "react-icons/fi";
 
 const Home = () => {
   
@@ -32,11 +33,11 @@ const Home = () => {
           </div>
           <div className="explore">
             <p>100% Natural Food</p>
-            <p className="h2">Choose the best healthier way of life</p>
+            <p className="h2">Choose the best healthier way <br /> of life</p>
             <button onClick={()=>navigate("/news")}>
               Explore Now{" "}
               <span>
-                <IoArrowForwardCircle />
+              <FiArrowRight />
               </span>
             </button>
           </div>

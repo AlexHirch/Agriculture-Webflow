@@ -1,13 +1,13 @@
 import React, { useState } from "react";
 import "../styles/navbar.scss";
-import { LogoOrganick } from "../resource";
+import { LogoOrganick, ShopingCart } from "../resource";
 import { NavLink, useNavigate } from "react-router-dom";
 import { IoIosArrowForward } from "react-icons/io";
-import { FiSearch } from "react-icons/fi";
 import { TiShoppingCart } from "react-icons/ti";
 import { GoArrowUp } from "react-icons/go";
 import { FaBars } from "react-icons/fa";
 import { FaRegCircleXmark } from "react-icons/fa6";
+import { IoSearch } from "react-icons/io5";
 
 const Navbar = ({ cart1, setCart1 }) => {
   const navigate = useNavigate();
@@ -74,13 +74,13 @@ const Navbar = ({ cart1, setCart1 }) => {
         <form className="search-nav">
           <input type="text" />
           <button type="submit">
-            <FiSearch />
+          <IoSearch />
           </button>
         </form>
         <div className="shopping-path">
           <p>
             <span>
-              <TiShoppingCart />
+              <img src={ShopingCart} alt="" />
             </span>
             Cart ({cart1})
           </p>

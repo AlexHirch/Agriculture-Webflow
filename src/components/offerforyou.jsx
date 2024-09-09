@@ -3,6 +3,8 @@ import { IoArrowForwardCircle } from "react-icons/io5";
 import RateStar from "./Rate";
 import { Product1 } from "../resource";
 import { useNavigate } from "react-router-dom";
+import { FiArrowRight } from "react-icons/fi";
+import CardShop from "./mini-components/card";
 
 const OfferForYou = () => {
   const navigate = useNavigate();
@@ -17,76 +19,18 @@ const OfferForYou = () => {
           <button onClick={() => navigate("/shop")}>
             View All Product{" "}
             <span>
-              <IoArrowForwardCircle />
+              <FiArrowRight />
             </span>
           </button>
         </div>
       </div>
       <div className="bot">
-        <div className="cards">
-          <div onClick={() => navigate("/shop/product")} className="card">
-            <p className="top">Vegetable</p>
-            <div className="img">
-              <img src={Product1} alt="" />
-            </div>
-            <p className="Name">Calabrese Broccoli</p>
-            <hr />
-            <div className="price">
-              <p>
-                <span>$20.00</span>$13.00
-              </p>
-              <div className="rate">
-                <RateStar />
-              </div>
-            </div>
-          </div>
-          <div onClick={() => navigate("/shop/product")} className="card">
-            <p className="top">Vegetable</p>
-            <div className="img">
-              <img src={Product1} alt="" />
-            </div>
-            <p className="Name">Calabrese Broccoli</p>
-            <hr />
-            <div className="price">
-              <p>
-                <span>$20.00</span>$13.00
-              </p>
-              <div className="rate">
-                <RateStar />
-              </div>
-            </div>
-          </div>
-          <div onClick={() => navigate("/shop/product")} className="card">
-            <p className="top">Vegetable</p>
-            <div className="img">
-              <img src={Product1} alt="" />
-            </div>
-            <p className="Name">Calabrese Broccoli</p>
-            <hr />
-            <div className="price">
-              <p>
-                <span>$20.00</span>$13.00
-              </p>
-              <div className="rate">
-                <RateStar />
-              </div>
-            </div>
-          </div>
-          <div onClick={() => navigate("/shop/product")} className="card">
-            <p className="top">Vegetable</p>
-            <div className="img">
-              <img src={Product1} alt="" />
-            </div>
-            <p className="Name">Calabrese Broccoli</p>
-            <hr />
-            <div className="price">
-              <p>
-                <span>$20.00</span>$13.00
-              </p>
-              <div className="rate">
-                <RateStar />
-              </div>
-            </div>
+        <div className="padding-10">
+          <div className="cards">
+            <CardShop />
+            <CardShop />
+            <CardShop />
+            <CardShop />
           </div>
         </div>
       </div>

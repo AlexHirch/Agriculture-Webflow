@@ -10,12 +10,12 @@ const OfferBanner = () => {
       <div onClick={()=>navigate("/shop")} className="offer">
         <img src={PhotoBack} alt="" />
         <p>Natural!!</p>
-        <p className="h2">Get Garden Fresh Fruits</p>
+        <p className="h2">Get Garden <br /> Fresh Fruits</p>
       </div>
       <div onClick={()=>navigate("/shop")} className="offer">
         <img src={PhotoBack1} alt="" />
         <p>Offer!!</p>
-        <p className="h2">Get 10% off on Vegetables</p>
+        <p className="h2">Get 10% off <br /> on Vegetables</p>
       </div>
     </div>
   );
