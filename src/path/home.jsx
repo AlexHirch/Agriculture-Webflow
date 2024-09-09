@@ -42,6 +42,8 @@ const Home = () => {
           </div>
         </div>
       </div>
+      <div className="containCenter">
+        
       <OfferBanner />
       <div className="bgc F9F8F8">
         <HomeAbout_us />
@@ -57,6 +59,7 @@ const Home = () => {
       <HpEcoTriendly />
       <HpElement1 />
       <HpNews />
+      </div>
     </>
   );
 };

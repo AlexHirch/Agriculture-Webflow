@@ -6,6 +6,8 @@ import { IoIosArrowForward } from "react-icons/io";
 import { FiSearch } from "react-icons/fi";
 import { TiShoppingCart } from "react-icons/ti";
 import { GoArrowUp } from "react-icons/go";
+import { FaBars } from "react-icons/fa";
+import { FaRegCircleXmark } from "react-icons/fa6";
 
 const Navbar = ({ cart1, setCart1 }) => {
   const navigate = useNavigate();
@@ -20,23 +22,23 @@ const Navbar = ({ cart1, setCart1 }) => {
   return (
     <div className="NavBar containCenter">
       <div className="nav-left">
-        <button onClick={()=>setVis(true)} className="barsbtn">
-          bars
+        <button onClick={() => setVis(true)} className="barsbtn">
+        <FaBars />
         </button>
         <div onClick={() => navigate("/")} className="logo">
           <img src={LogoOrganick} alt="Logo-Organick" />
         </div>
-        <div className={vis ?"navigation active" : "navigation" }>
-          <button onClick={()=>setVis(false)} className="xmark">
-            x
+        <div className={vis ? "navigation active" : "navigation"}>
+          <button onClick={() => setVis(false)} className="xmark">
+          <FaRegCircleXmark size={30} />
           </button>
-          <div className="page-link">
+          <div onClick={() => setVis(false)} className="page-link">
             <NavLink to={"/"}>Home</NavLink>
           </div>
-          <div className="page-link">
+          <div onClick={() => setVis(false)} className="page-link">
             <NavLink to={"/about"}>About</NavLink>
           </div>
-          <div className="page-link">
+          <div onClick={() => setVis(false)} className="page-link">
             <div className="pages">
               <NavLink className="p" to={"/pages"}>
                 Pages{" "}
@@ -56,13 +58,13 @@ const Navbar = ({ cart1, setCart1 }) => {
               </div>
             </div>
           </div>
-          <div className="page-link">
+          <div onClick={() => setVis(false)} className="page-link">
             <NavLink to={"/shop"}>Shop</NavLink>
           </div>
-          <div className="page-link">
+          <div onClick={() => setVis(false)} className="page-link">
             <NavLink to={"/projects"}>Projects</NavLink>
           </div>
-          <div className="page-link">
+          <div onClick={() => setVis(false)} className="page-link">
             <NavLink to={"/news"}>News</NavLink>
           </div>
         </div>

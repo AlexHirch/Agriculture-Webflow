@@ -10,6 +10,12 @@
   * {
     flex-wrap: wrap;
   }
+  .barsbtn {
+    display: none;
+  }
+  .xmark {
+    display: none;
+  }
   .nav-left {
     width: auto;
     height: max-content;
@@ -318,6 +324,23 @@
     padding: 40px 10px 10px 10px;
     justify-content: baseline;
     justify-items: start;
+    .barsbtn {
+      width: max-content;
+      display: block;
+      border: none;
+      background-color: transparent;
+      font-size: 26px;
+      color: #274c5b;
+    }
+    .xmark {
+      border: none;
+      background-color: transparent;
+      display: block;
+      color: rgb(255, 123, 123);
+      &:hover {
+        color: red;
+      }
+    }
     .nav-left {
       gap: 10px;
       .logo {
@@ -328,24 +351,24 @@
         }
       }
       .navigation {
-        width: 80%;
+        width: 0%;
         height: 100%;
         z-index: 5;
         padding: 30px;
         position: fixed;
         top: 0;
-        left: 0;
-        display: none;
-        width: 80%;
+        left: -100%;
+        display: grid;
         gap: 10px;
         background-color: #f5f5f5;
         justify-content: baseline;
         justify-items: start;
         align-content: start;
         &.active {
-          display: grid;
+          width: 100%;
+          left: 0;
         }
-        .xmark{
+        .xmark {
           position: absolute;
           right: 20px;
           top: 20px;
@@ -355,7 +378,7 @@
         a {
           font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
           font-weight: 600;
-          font-size: 16px;
+          font-size: 20px;
           color: #274c5b;
           &.active {
             color: #7eb693;
@@ -370,7 +393,7 @@
           height: max-content;
           display: flex;
           align-items: center;
-          font-size: 16px;
+          font-size: 20px;
           color: #274c5b;
           &:hover {
             color: green;
@@ -386,15 +409,16 @@
         .page-link {
           position: relative;
           .page {
+            row-gap: 10px;
             left: 0;
             margin-top: 10px;
             box-shadow: none;
             overflow: hidden;
             width: auto;
-            height:auto;
+            height: auto;
             position: relative;
             border: 2px solid #274c5b;
-            padding: 5px;
+            padding: 10px;
             border-radius: 10px;
             &:hover {
               color: green;
@@ -402,7 +426,9 @@
           }
           &:hover {
             .page {
-              row-gap: 0px;
+              row-gap: 10px;
+              position: relative;
+              padding: 10px;
             }
           }
         }
@@ -411,6 +437,7 @@
     .search_cart {
       height: 30px;
       gap: 8px;
+      position: relative;
       form {
         width: 150px;
         height: 30px;
