@@ -109,3 +109,45 @@
     padding: 20px 50px;
   }
 }
+
+@media (max-width: 760px) {
+  .Shop {
+    width: 100%;
+    height: max-content;
+    position: relative;
+    .bgimg {
+      height: 100px;
+      img {
+        width: 100%;
+        position: absolute;
+        &.bg1 {
+          width: 50%;
+          left: -30%;
+          rotate: 30deg;
+        }
+        &.bg2 {
+          width: 50%;
+          right: -0%;
+          rotate: 210deg;
+        }
+        &.pattern{
+          width: 130%;
+        }
+      }
+      p {
+        font-size: 30px;
+      }
+    }
+  }
+  .shop.OurProducts {
+    padding: 20px;
+    .cards {
+      display: flex;
+      flex-wrap: wrap;
+      width: 100%;
+      .card {
+        background-color: #f9f8f8;
+      }
+    }
+  }
+}

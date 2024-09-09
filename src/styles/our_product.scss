@@ -1,0 +1,208 @@
+.OurProducts {
+  width: 100%;
+  height: auto;
+  display: grid;
+  justify-content: center;
+  padding: 100px 0 40px 0;
+  p.pp {
+    width: 100%;
+    height: auto;
+    text-align: center;
+    font-family: Roboto;
+    font-size: 40px;
+    color: #274c5b;
+    span {
+      font-family: Yellowtail;
+      font-size: 20px;
+      color: #7eb693;
+    }
+  }
+  .cards {
+    padding: 20px 0;
+    width: 900px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    position: relative;
+    row-gap: 20px;
+    .card {
+      box-shadow: 0 0 10px rgb(237, 237, 237);
+      width: 210px;
+      position: relative;
+      background-color: white;
+      padding: 20px 10px 10px 10px;
+      border-radius: 20px;
+      p.top {
+        width: max-content;
+        font-size: 14px;
+        padding: 3px 5px;
+        font-weight: 200;
+        position: absolute;
+        border-radius: 5px;
+        background-color: #274c5b;
+        color: white;
+        font-family: "Open Sans";
+        top: 20px;
+        left: 20px;
+        z-index: 2;
+      }
+      .img {
+        display: flex;
+        align-items: center;
+        height: 250px;
+        width: 100%;
+        z-index: 1;
+        position: relative;
+        img {
+          width: 100%;
+        }
+      }
+      p.Name {
+        font-family: Roboto;
+        font-size: 16px;
+        color: #274c5b;
+        padding: 5px 0;
+        position: relative;
+        z-index: 2;
+      }
+      hr {
+        border: 0.5px solid #f3f3f3;
+      }
+      .price {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 5px 0 0 0;
+        position: relative;
+        z-index: 2;
+        p {
+          display: flex;
+          align-items: center;
+          font-size: 16px;
+          font-family: Roboto;
+          color: #274c5b;
+          gap: 5px;
+          span {
+            font-size: 12px;
+            color: #bcbcbc;
+            text-decoration: line-through;
+          }
+        }
+        .rate {
+          display: flex;
+          align-items: center;
+        }
+      }
+    }
+  }
+  button {
+    display: flex;
+    margin: 60px auto;
+    width: max-content;
+    align-items: center;
+    justify-content: center;
+    padding: 20px 40px;
+    background-color: #274c5b;
+    border: none;
+    border-radius: 10px;
+    color: white;
+    gap: 7px;
+    span {
+      display: flex;
+      font-size: 10px;
+      padding: 2px;
+      border-radius: 20px;
+      color: white;
+      background-color: rgba(255, 255, 255, 0.3);
+      width: max-content;
+      height: max-content;
+    }
+  }
+  &.shopsingle {
+    .cards {
+      .card {
+        background-color: #f9f8f8;
+        box-shadow: 0 0 1px rgb(249, 248, 248);
+      }
+    }
+  }
+}
+
+@media (min-width: 1000px) and (max-width: 1360px) {
+  .OurProducts {
+    padding: 20px 0;
+  }
+} //yes
+@media (max-width: 1000px) and (min-width: 760px) {
+  .OurProducts {
+    padding: 20px;
+    p.pp {
+      font-size: 30px;
+      span {
+        font-size: 18px;
+      }
+    }
+    .cards {
+      width: 100%;
+      justify-content: space-evenly;
+      .card {
+        width: 31%;
+        padding: 10px 5px 5px 5px;
+        p.top {
+          font-size: 12px;
+          top: 15px;
+          left: 15px;
+        }
+        .img {
+          height: 260px;
+        }
+        p.Name {
+          padding: 5px;
+        }
+        .price {
+          p {
+            padding: 5px;
+            display: flex;
+            align-items: center;
+            font-size: 16px;
+            font-family: Roboto;
+            color: #274c5b;
+            gap: 5px;
+            span {
+              font-size: 12px;
+              color: #bcbcbc;
+              text-decoration: line-through;
+            }
+          }
+          .rate {
+            display: flex;
+            align-items: center;
+          }
+        }
+      }
+    }
+    button {
+      margin: 20px auto;
+      font-size: 20px;
+      margin-bottom: 40px;
+    }
+  }
+} //yes
+@media (max-width: 760px) {
+  .OurProducts {
+    width: 100%;
+    padding: 20px 0;
+    .cards {
+      width: 100%;
+      justify-content: center;
+      row-gap: 20px;
+      .card {
+        width: 260px;
+      }
+    }
+    button {
+      margin: 20px auto;
+      padding: 20px 85px;
+    }
+  }
+}

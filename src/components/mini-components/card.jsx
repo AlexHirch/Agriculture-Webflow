@@ -2,6 +2,7 @@ import React from "react";
 import RateStar from "../Rate";
 import { useNavigate } from "react-router-dom";
 import { Product1 } from "../../resource";
+import "../../styles/home.scss"
 
 const CardShop = () => {
     const navigate = useNavigate()

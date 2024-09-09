@@ -1,9 +1,8 @@
 import React from "react";
-import RateStar from "./Rate";
-import { Product1 } from "../resource";
 import { IoMdArrowRoundForward } from "react-icons/io";
 import { useNavigate } from "react-router-dom";
 import CardShop from "./mini-components/card";
+import "../styles/our_product.scss"
 
 const OurProducts = () => {
   const navigate = useNavigate();
