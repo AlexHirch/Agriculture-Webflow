@@ -17,6 +17,7 @@ import PorfolioInfo from "./path/porfolio-info";
 import News from "./path/news";
 import NewsSingleBlog from "./path/news-single-blog";
 import ContactUs from "./path/contact";
+import Password from "./path/password";
 
 const App = () => {
   const [cart1, setCart1] = useState(0)
@@ -32,6 +33,7 @@ const App = () => {
           <Route path="/pages/our-team" element={<OurTeam />} />
           <Route path="/shop/product" element={<ShopSingle cart1={cart1} setCart1={setCart1} />} />
           <Route path="/pages/servise-page" element={<ServisePage />} />
+          <Route path="/pages/password" element={<Password />} />
           <Route path="/pages/quality-standart" element={<QualityStandart />} />
           <Route path="/projects" element={<PortfolioStandart />} />
           <Route path="/projects/black-raspberry" element={<PorfolioInfo />} />

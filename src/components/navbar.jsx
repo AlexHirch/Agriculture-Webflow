@@ -54,6 +54,7 @@ const Navbar = ({ cart1, setCart1 }) => {
                   QualityStandart
                 </NavLink>
                 <NavLink to={"/pages/contact-us"}>Contact Us</NavLink>
+                <NavLink to={"/pages/password"}>Password</NavLink>
                 <NavLink to={"/jhbhdvsjbhj"}>PageNotFound</NavLink>
               </div>
             </div>
