@@ -1367,6 +1367,7 @@
       .cards {
         justify-content: center;
         flex-wrap: wrap;
+        gap: 10px;
         width: 100%;
         .card {
           width: 260px;
@@ -1378,7 +1379,8 @@
     img {
       position: relative;
       left: -30%;
-      width: 160%;
+      width: auto;
+      height:550px;
     }
     .content {
       width: 80%;
@@ -1444,7 +1446,7 @@
     }
     .bot {
       flex-wrap: wrap;
-      gap: 100px;
+      gap: 20vw;
       width: 100%;
       padding: 40px 0;
       .box {

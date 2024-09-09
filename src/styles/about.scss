@@ -565,7 +565,7 @@
             height: 100%;
           }
         }
-      } 
+      }
       button {
         padding: 15px 30px;
         margin-top: -20px;
@@ -683,3 +683,192 @@
     padding: 50px 100px;
   }
 } //tablet
+
+@media (max-width: 760px) {
+  .About {
+    .bgimg {
+      height: 30vw;
+      p {
+        font-size: 30px;
+      }
+    }
+  } //yes
+  .About1 {
+    width: 100%;
+    height: 500px;
+    .background {
+      opacity: 0.3;
+    }
+    .content {
+      height: 90%;
+      width: 80%;
+      left: 10%;
+      p.pp {
+        font-size: 20px;
+      }
+      p.h2 {
+        font-size: 30px;
+        padding-right: 0;
+      }
+      p.small {
+        font-size: 12px;
+        line-height: 16px;
+      }
+      .cards {
+        height: 100px;
+        row-gap: 10px;
+        margin: 5px 0;
+        .card {
+          p.h3 {
+            color: #274c5b;
+            font-size: 12px;
+          }
+          img {
+            padding: 3px;
+            border-radius: 5px;
+            background-color: white;
+          }
+        }
+      }
+      button {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 20px 40px;
+        background-color: #274c5b;
+        border: none;
+        border-radius: 10px;
+        color: white;
+        gap: 7px;
+        span {
+          display: flex;
+          font-size: 10px;
+          padding: 2px;
+          border-radius: 20px;
+          color: white;
+          background-color: rgba(255, 255, 255, 0.3);
+          width: max-content;
+          height: max-content;
+        }
+      }
+    }
+  } //yes
+  .About2 {
+    position: relative;
+    height: max-content;
+    padding: 0 40px 0 60px;
+    .BgGreen {
+      opacity: 0.5;
+      margin-top: 50px;
+      width: 170%;
+      height: 500px;
+      padding: 20px;
+      right: -80%;
+      .background {
+        width: 120%;
+      }
+    }
+    .content {
+      margin-top: 60px;
+      width: 100%;
+      .cards {
+        .card {
+          .buttonHz {
+            width: max-content;
+            position: relative;
+            right: -30%;
+          }
+          .small {
+            padding: 0 40px 0 10px;
+          }
+        }
+      }
+    }
+  } //yes
+  .About2-1 {
+    margin-top: 80px;
+    width: 100%;
+    height: max-content;
+    padding: 0px 10px;
+    .boxes {
+      width: 100%;
+      padding: 0 10px 10px 10px;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      .box {
+        width: 150px;
+      }
+    }
+  } //yes
+  .TeamAbout {
+    width: 100%;
+    p.pp {
+      font-size: 30px;
+      span.small {
+        width: 100%;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 14px;
+        font-weight: 200;
+        padding: 0 5%;
+        line-height: 20px;
+        color: #778388;
+      }
+    }
+    .containCenter {
+      padding: 30px;
+      .boxes {
+        width: 100%;
+        .box {
+          width: 85%;
+          border-radius: 20px;
+          overflow: hidden;
+          text-align: left;
+          background-color: #f9f8f8;
+          position: relative;
+          &:hover {
+            background-color: white;
+            box-shadow: 0 0 40px #707070;
+            scale: 1.05;
+          }
+          .img {
+            width: 100%;
+            height: 400px;
+            overflow: hidden;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            img {
+              height: 100%;
+            }
+          }
+          .text {
+            padding: 20px 20px;
+            width: 80%;
+            h3 {
+              font-family: Roboto;
+              font-size: 20px;
+              color: #274c5b;
+            }
+            p {
+              padding-top: 10px;
+              font-family: Yellowtail;
+              color: #68a47f;
+              font-size: 16px;
+            }
+          }
+          .icons {
+            display: flex;
+            position: absolute;
+            bottom: 10px;
+            right: 20px;
+            gap: 10px;
+            .icon {
+              color: #274c5b;
+              font-size: 20px;
+            }
+          }
+        }
+      }
+    }
+  }
+}

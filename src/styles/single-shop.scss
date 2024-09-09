@@ -257,3 +257,44 @@
     }
   }
 }
+
+@media (max-width: 760px) {
+  .ShopSingle {
+    .bgimg {
+      height: 30vw;
+      p {
+        font-size: 30px;
+      }
+    }
+  }
+  .single_shop_product {
+    width: 100%;
+    height: max-content;
+    padding: 30px;
+    .top {
+      width: 100%;
+      align-items: start;
+      justify-content: start;
+      flex-direction: column;
+      .right {
+        width: 100%;
+        padding: 0;
+        .content {
+          width: 100%;
+        }
+      }
+    }
+    .bot2 {
+      width: 100%;
+      padding: 40px;
+      .btn {
+        gap: 10px;
+        padding: 0px 10px 10px 10px;
+        button {
+          padding: 15px 35px;
+          font-size: 16px;
+        }
+      }
+    }
+  }
+}
