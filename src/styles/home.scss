@@ -89,14 +89,14 @@
     cursor: pointer;
     width: 683px;
     height: 367px;
-    border-radius: 20px;
+    border-radius: 30px;
     overflow: hidden;
     display: flex;
     flex-direction: column;
     justify-content: center;
     position: relative;
     p {
-      margin-left: 10%;
+      margin-left: 8.5%;
       color: white;
       position: relative;
       z-index: 3;
@@ -117,7 +117,7 @@
     }
     &:last-child {
       p {
-        color: #68a47f;
+        color: #7EB693;
         &.h2 {
           color: #274c5b;
         }
@@ -473,13 +473,13 @@
           display: flex;
           align-items: center;
           height: 120%;
-          margin-left: -10%;
+          margin-left: 0%;
           width: 120%;
           z-index: 1;
           position: relative;
-          mix-blend-mode: multiply;
           cursor: pointer;
           img {
+            mix-blend-mode: multiply;
             width: 100%;
           }
         }
@@ -593,13 +593,13 @@
     cursor: pointer;  
     width: 612px;
     height: 583px;
-    &:hover{
-      scale: 1.05;
-    }
     position: relative;
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: space-evenly;
+    &:hover{
+      scale: 1.05;
+    }
     img {
       width: 100%;
     }

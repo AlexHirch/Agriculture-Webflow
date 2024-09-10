@@ -50,7 +50,6 @@ const About = () => {
               the 1500s, when an unknown printer took a galley.
               <br />
               <br />
-              <br />
               Simply dummy text of the printing and typesetting industry. Lorem
               had ceased to been the industry's standard dummy text ever since
               the 1500s, when an unknown printer took a galley.
@@ -85,7 +84,7 @@ const About = () => {
           </div>
           <div className="content">
             <p className="pp">Why Choose us?</p>
-            <p className="h2">We do not buy from the open market & traders.</p>
+            <p className="h2">We do not buy from the <br /> open market & traders.</p>
             <p className="small">
               Simply dummy text of the printing and typesetting industry. Lorem
               had ceased to been the industry's standard dummy text ever since

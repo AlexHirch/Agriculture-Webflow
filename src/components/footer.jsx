@@ -16,14 +16,16 @@ const Footer = () => {
           <img src={SubscribeBgImg} alt="BgImg" />
         </div>
         <div className="content">
-          <p className="sub">Subscribe to <br /> our Newsletter</p>
+          <p className="sub">
+            Subscribe to <br /> our Newsletter
+          </p>
           <form className="sub">
             <input type="email" placeholder="Your Email Address" />
             <button>Subscribe</button>
           </form>
         </div>
       </div>
-      <footer className="containCenter footer">
+      <footer className="containCenter lalaku">
         <div className="top">
           <div className="left">
             <ul>
@@ -48,7 +50,7 @@ const Footer = () => {
           <div className="center">
             <img src={LogoOrganick} alt="" />
             <p>
-              Simply dummy text of the printing and typesetting industry. Lorem
+              Simply dummy text of the printing and typesetting industry. <br /> Lorem
               Ipsum simply dummy text of the printing{" "}
             </p>
             <div className="social">

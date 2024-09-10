@@ -14,7 +14,6 @@ import { useNavigate } from "react-router-dom";
 import { FiArrowRight } from "react-icons/fi";
 
 const Home = () => {
-  
   const top0 = () => {
     window.scrollTo({ top: 0, behavior: "instant" });
   };
@@ -22,7 +21,7 @@ const Home = () => {
   useEffect(() => {
     top0();
   }, []);
-  const navigate = useNavigate()
+  const navigate = useNavigate();
   return (
     <>
       <div className="bgc">
@@ -33,34 +32,34 @@ const Home = () => {
           </div>
           <div className="explore">
             <p>100% Natural Food</p>
-            <p className="h2">Choose the best healthier way <br /> of life</p>
-            <button onClick={()=>navigate("/news")}>
+            <p className="h2">
+              Choose the best healthier way <br /> of life
+            </p>
+            <button onClick={() => navigate("/news")}>
               Explore Now{" "}
               <span>
-              <FiArrowRight />
+                <FiArrowRight />
               </span>
             </button>
           </div>
         </div>
       </div>
-      <div className="containCenter">
-        
-      <OfferBanner />
-      <div className="bgc F9F8F8">
-        <HomeAbout_us />
-      </div>
+      
+        <OfferBanner />
+        <div className="bgc F9F8F8">
+          <HomeAbout_us />
+        </div>
 
-      <OurProducts />
-      <div className="bgc FCFCFC">
-        <Customers />
-      </div>
-      <div className="bgc a274C5B">
-        <OfferForYou />
-      </div>
-      <HpEcoTriendly />
-      <HpElement1 />
-      <HpNews />
-      </div>
+        <OurProducts />
+        <div className="bgc FCFCFC">
+          <Customers />
+        </div>
+        <div className="bgc a274C5B">
+          <OfferForYou />
+        </div>
+        <HpEcoTriendly />
+        <HpElement1 />
+        <HpNews />
     </>
   );
 };
