@@ -23,11 +23,11 @@
     padding: 20px 0;
     width: 100%;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     flex-wrap: wrap;
     position: relative;
     gap: 20px;
-    row-gap: 20px;
+    row-gap: 40px;
     .card {
       display: grid;
       width: 330px;
@@ -54,12 +54,12 @@
       .img {
         display: flex;
         align-items: center;
-        height: 120%;
-        margin-left: -10%;
-        width: 120%;
+        height: 100%;
+        margin-left: 0;
+        width: 100%;
         z-index: 1;
         position: relative;
-        mix-blend-mode: multiply;
+        mix-blend-mode: darken;
         cursor: pointer;
         img {
           width: 100%;

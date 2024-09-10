@@ -1,5 +1,5 @@
 import React, { useEffect } from "react";
-import { AboutBg, Shaftoli } from "../resource";
+import { AboutBg, Shaftoli, ShopPattern } from "../resource";
 import "../styles/shop.scss";
 import CardShop from "../components/mini-components/card";
 
@@ -18,7 +18,7 @@ const Shop = () => {
           <div className="bgimg">
             <img className="bg1" src={Shaftoli} alt="YAMETE" />
             <img className="bg2" src={Shaftoli} alt="YAMETE" />
-            <img className="pattern" src={AboutBg} alt="KUDASAY" />
+            <img className="pattern" src={ShopPattern} alt="KUDASAY" />
             <p>Shop</p>
           </div>
         </div>

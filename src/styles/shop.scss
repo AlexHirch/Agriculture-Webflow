@@ -9,7 +9,7 @@
     align-items: center;
     justify-content: center;
     z-index: 0;
-    height: 300px;
+    height: 450px;
     img {
       width: 100%;
       position: absolute;
@@ -17,27 +17,34 @@
         position: relative;
       }
       &.bg1 {
+        z-index: 2;
+        top: 56%;
         width: 50%;
-        left: -30%;
-        rotate: 30deg;
+        left: -23.5%;
+        rotate: 90deg;
+        transform: rotateY(180deg);
       }
       &.bg2 {
+      z-index: 1;
         width: 50%;
-        right: -0%;
-        rotate: 210deg;
+        right: -3.5%;
+        rotate: -90deg;
+      }
+      &.pattern {
+      z-index: 3;
       }
     }
     p {
       position: absolute;
       z-index: 2;
       font-family: Roboto;
-      font-size: 50px;
+      font-size: 70px;
       color: #274c5b;
     }
   }
-}
+} //1x1 copy
 .shop.OurProducts {
-  padding: 20px 200px;
+  padding: 90px 260px;
   .cards {
     .card {
       background-color: #f9f8f8;
