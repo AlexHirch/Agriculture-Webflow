@@ -39,6 +39,7 @@
   overflow: hidden;
   height: max-content;
   background-color: #f1eff0;
+  mix-blend-mode: multiply;
   &.F9F8F8 {
     background-color: #f9f8f8;
   }
@@ -57,8 +58,8 @@
   &.EDF1F5 {
     background-color: #edf1f5;
   }
-  &.F3F3F5 {
-    background-color: #f3f3f5;
+  &.F3F2F7 {
+    background-color: #F3F2F7;
   }
   &.FBF5E3 {
     background-color: #fbf5e3;

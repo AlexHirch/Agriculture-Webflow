@@ -187,7 +187,7 @@
   position: fixed;
   bottom: -100px;
   right: 20px;
-  z-index: 5;
+  z-index: 20;
   padding-top: 10px;
   opacity: 0.5;
   background-color: #76b767fe;
@@ -209,7 +209,7 @@
   }
 }
 
-@media (max-width: 1660px) {
+@media (max-width: 1910px) {
   .NavBar {
     padding: 30px 50px;
     .nav-left {
@@ -269,7 +269,7 @@
   }
 }
 
-@media (max-width: 1000px) {
+@media (max-width: 1360px) {
   .NavBar {
     position: relative;
     justify-content: space-between;

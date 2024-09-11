@@ -2,8 +2,10 @@ import React from "react";
 import { FaFacebook, FaTwitter } from "react-icons/fa";
 import { IoLogoInstagram } from "react-icons/io";
 import { gulushlagan, hind, tuvak } from "../resource";
+import { useNavigate } from "react-router-dom";
 
 const TeamAbout = () => {
+  const navigate = useNavigate()
   return (
     <div className="TeamAbout">
       <div className="containCenter">
@@ -21,10 +23,10 @@ const TeamAbout = () => {
         <br />
         <div className="boxes">
           <div className="box">
-            <div className="img">
+            <div onClick={()=> navigate('/')} className="img">
               <img src={hind} alt="" />
             </div>
-            <div className="text">
+            <div onClick={()=> navigate('/')} className="text">
               <h3>Giovani Bacardo</h3>
               <p>Farmer</p>
             </div>

@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import {
   BgImgService,
   IconForService1,
@@ -13,12 +13,26 @@ import {
 } from "../resource";
 import { IoArrowForwardCircle } from "react-icons/io5";
 import { FaPlay } from "react-icons/fa";
-import "../styles/service.scss"
+import "../styles/service.scss";
+import { IoIosCloseCircleOutline } from "react-icons/io";
+import { useNavigate } from "react-router-dom";
 
 const ServisePage = () => {
-  
+  const navigate = useNavigate()
   const top0 = () => {
     window.scrollTo({ top: 0, behavior: "instant" });
+  };
+  const [ytvis, setYtvis] = useState(false);
+
+  const ytvid1 = document.getElementById("ytvid1");
+  const ytvid = () => {
+    ytvid1.innerHTML = `
+    <iframe
+      width="100%"
+      height="100%"
+      src="https://youtube.com/embed/0XL9IWlUFms?si=SHbzwH_ZhxWm36MN?autoplay=1&mute=1"
+    ></iframe>
+    `;
   };
 
   useEffect(() => {
@@ -26,6 +40,24 @@ const ServisePage = () => {
   }, []);
   return (
     <>
+      <div className={ytvis ? "youtubesd" : "youtubesd viss"}>
+        <button
+          onClick={() => {
+            ytvid1.innerHTML = "";
+            setYtvis(false);
+          }}
+          className="close"
+        >
+          <IoIosCloseCircleOutline />
+        </button>
+        <div id="ytvid1">
+          <iframe
+            width="100%"
+            height="100%"
+            src="https://youtube.com/embed/0XL9IWlUFms?si=SHbzwH_ZhxWm36MN?autoplay=1&mute=1"
+          ></iframe>
+        </div>
+      </div>
       <div className="bgc F3F3F5">
         <div className="ServisePage containCenter">
           <div className="bgimg">
@@ -37,7 +69,7 @@ const ServisePage = () => {
       </div>
       <div className="ServisePage1 bgc F9F8F8">
         <p className="pp">
-          <span>Categories </span>
+          <span>What we Grow </span>
           <br />
           Better Agriculture for Better Future
         </p>
@@ -111,8 +143,8 @@ const ServisePage = () => {
               </div>
             </div>
             <div className="btnn">
-              <button>
-                More News{" "}
+              <button onClick={()=>navigate("/news/blog")}>
+                Explore More{" "}
                 <span>
                   <IoArrowForwardCircle />
                 </span>
@@ -137,7 +169,14 @@ const ServisePage = () => {
               had ceased to been the industry's standard dummy text ever since
               the
             </p>
-            <button><FaPlay /></button>
+            <button
+              onClick={() => {
+                setYtvis(true);
+                ytvid();
+              }}
+            >
+              <FaPlay />
+            </button>
           </div>
         </div>
       </div>

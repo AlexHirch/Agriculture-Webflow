@@ -140,7 +140,7 @@ const About = () => {
           </div>
         </div>
       </div>
-      <div onClick={() => navigate("/about/#customer")} className="customer_onclick">
+      <div onClick={() => navigate("/pages/our-team")} className="customer_onclick">
         <TeamAbout />
       </div>
       <div className="bgc a274C5B">

@@ -407,7 +407,7 @@
         cursor: pointer;
         width: max-content;
         margin-top: 20px;
-        padding: 28px 39px;
+        padding: 26px 36px;
         display: flex;
         align-items: center;
         justify-content: center;
@@ -415,14 +415,13 @@
         background-color: #efd372;
         color: #274c5b;
         font-family: Roboto;
-        border-radius: 20px;
+        border-radius: 18px;
         border: none;
         gap: 10px;
         span {
           display: flex;
-          padding: 2px;
-          font-size: 14px;
-          padding: 6px;
+          font-size: 10px;
+          padding: 4px;
           border-radius: 20px;
           color: white;
           background-color: #335b6b;
@@ -438,6 +437,7 @@
     justify-content: center;
     display: grid;
     .cards {
+      margin-top: 28px;
       padding: 20px 0;
       width: 100%;
       display: flex;
@@ -472,12 +472,14 @@
         .img {
           display: flex;
           align-items: center;
-          height: 120%;
+          height: 100%;
           margin-left: 0%;
-          width: 120%;
+          width: 100%;
           z-index: 1;
           position: relative;
           cursor: pointer;
+          background-color: transparent;
+          mix-blend-mode: multiply;
           img {
             mix-blend-mode: multiply;
             width: 100%;
@@ -604,7 +606,8 @@
       width: 100%;
     }
     button {
-      position: absolute;
+    cursor: pointer;  
+    position: absolute;
       padding: 33px 83px;
       border: none;
       background-color: #ffffff;
@@ -693,13 +696,13 @@
         justify-content: center;
         align-items: center;
         position: relative;
-        border-radius: 20px;
+        border-radius: 30px;
         img {
           width: 100%;
         }
         p {
-          top: 20px;
-          left: 20px;
+          top: 43px;
+          left: 32px;
           position: absolute;
           display: grid;
           align-items: center;

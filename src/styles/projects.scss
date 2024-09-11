@@ -9,63 +9,66 @@
     align-items: center;
     justify-content: center;
     z-index: 0;
-    height: 300px;
+    height: 450px;
     img {
       position: absolute;
       width: 100%;
       &.bg1 {
-        bottom: -80%;
-        left: -100px;
-        width: 70%;
+        bottom: -55%;
+        left: -10%;
+        width: 85%;
         rotate: 0deg;
       }
       &.bg2 {
-        bottom: 5%;
-        right: -35%;
-        width: 70%;
-        rotate: -90deg;
+        bottom: -250%;
+        right: -11%;
+        width: 110%;
+        transform: rotateY(180deg);
       }
     }
     p {
       position: absolute;
       z-index: 2;
       font-family: Roboto;
-      font-size: 50px;
+      font-size: 70px;
       color: #274c5b;
     }
   }
-} //media max-1400 min-1000 yes
+} //media max-1400 min-1000 yes 1x1 copy
 .Porfolio_Box {
   width: 100%;
   height: auto;
-  max-width: 1440px;
+  max-width: 1920px;
   margin: auto;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
   row-gap: 40px;
-  padding: 100px 150px 0 150px;
+  padding: 150px 259px 0 259px;
+  margin-bottom: 100px;
   .box {
-    width: 32%;
+    width: 450px;
     &:hover {
       scale: 1.05;
     }
     .img {
-      border-radius: 20px;
+      border-radius: 30px;
       position: relative;
       overflow: hidden;
       display: flex;
+      padding: 25px;
       align-items: center;
       justify-content: center;
-      padding: 20px;
-      height: 300px;
+      height: 400px;
       width: 100%;
       img {
+        margin-left: 30%;
         z-index: 0;
         width: 140%;
         position: absolute;
       }
       .btn {
+        cursor: pointer;
         overflow: hidden;
         border-radius: 20px;
         display: flex;
@@ -92,8 +95,7 @@
           width: 100%;
           height: 100%;
           z-index: 2;
-          background-color: rgba(255, 255, 255, 0.7);
-          box-shadow: 0 0 20px rgb(252, 252, 252);
+          background-color: rgba(255, 255, 255, 0.855);
           p {
             width: 50px;
             height: 50px;
@@ -102,24 +104,24 @@
       }
     }
     h4 {
-      padding-top: 20px;
-      font-size: 26px;
+      padding-top: 21px;
+      font-size: 25px;
       color: #274c5b;
+      line-height: 29.3px;
       padding-bottom: 10px;
       font-family: Roboto;
     }
     p {
       margin-top: -10px;
       font-family: Yellowtail;
-      font-size: 20px;
-      color: #68a47f;
+      font-size: 22px;
+      color: #7eb693;
     }
   }
-} //media max-1400 min-1000 yes
+} //media max-1400 min-1000 yes 1x1 copy
 .PorfolioInfo {
   width: 100%;
   position: relative;
-  padding-bottom: 130px;
   .close {
     width: max-content;
     height: max-content;
@@ -129,70 +131,97 @@
     z-index: 3;
     cursor: pointer;
     font-size: 60px;
-    color: #b5c3c6;
+    // color: #b5c3c6;
+    color: transparent;
   }
   .img {
     width: 100%;
     position: relative;
-    height: 700px;
+    height: 898px;
     overflow: hidden;
     img {
       width: 100%;
     }
   }
   .content_box {
-    bottom: 0px;
-    left: 10%;
-    width: 80%;
+    top: 0;
+    width: max-content;
     position: absolute;
+    margin: 730px 260px 0 260px;
+    max-height: 385px;
     height: max-content;
     background-color: white;
-    border-radius: 20px;
+    border-radius: 30px;
     overflow: hidden;
     display: flex;
     box-shadow: 0 0 50px #ddddddac;
     .text {
-      width: 70%;
+      width: 891px;
       height: 100%;
-      padding: 50px;
+      padding: 96px 82px;
     }
     .info {
-      padding: 50px;
-      width: 30%;
+      width: 509px;
+      padding: 106px 100px 107px 111px;
       background-color: #fafafa;
       p {
-        font-size: 20px;
-        font-family: Arial, Helvetica, sans-serif;
+        width: 100%;
+        font-size: 25px;
+        font-family: Roboto;
         font-weight: 500;
-        line-height: 40px;
+        line-height: 29.3px;
+        position: relative;
         display: flex;
         justify-content: space-between;
         color: #274c5b;
+        margin-bottom: 18px;
         span {
-          width: 60%;
-          font-size: 16px;
-          color: #778388;
+          width: 100%;
+          display: flex;
+          justify-content: space-between;
+          font-size: 18px;
+          color: #525c60;
+          position: absolute;
+          &:first-child {
+            color: #274c5b;
+            font-size: 25px;
+            right: 60%;
+            font-family: Roboto;
+            line-height: 29.3px;
+            width: max-content;
+          }
+          &:last-child {
+            font-family: "Open Sans", system-ui;
+            left: 45%;
+            line-height: 29.77px;
+            width: max-content;
+          }
         }
       }
     }
   }
   h2 {
-    font-size: 40px;
+    font-size: 70px;
     font-family: Roboto;
     color: #274c5b;
     padding-bottom: 20px;
+    line-height: 82.03px;
   }
   p {
     font-size: 18px;
-    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
-    color: #616c70;
-    line-height: 25px;
+    font-family: "Open Sans", system-ui;
+    color: #525c60;
+    font-weight: 400;
+    letter-spacing: 0.1px;
+    line-height: 29.77px;
   }
-} //media max-1400 min-1000 yes
+} //media max-1400 min-1000 yes 1x1 copy
 .PorfolioInfo1 {
+  margin-top: 212px;
+  margin-bottom: 120px;
   width: 100%;
   height: max-content;
-  padding: 80px 250px 0 250px;
+  padding: 68px 492px 0 492px;
   .img {
     margin-top: 40px;
     width: 100%;
@@ -201,36 +230,40 @@
     border-radius: 20px;
     align-items: center;
     justify-content: center;
-    height: 500px;
+    height: 426px;
     img {
-      width: 110%;
+      filter: contrast(120%);
+      filter: brightness(0.9);
+      filter: saturate(120%);
+      width: 100%;
     }
   }
   h5 {
     width: 100%;
     text-align: center;
-    font-size: 14px;
+    font-size: 18px;
     font-family: Arial, Helvetica, sans-serif;
     color: #778388;
+    line-height: 29.77px;
     font-weight: 100;
     padding: 20px 0;
   }
   h2 {
-    font-size: 30px;
+    font-size: 35px;
     font-family: Roboto;
     color: #274c5b;
-    padding-bottom: 20px;
+    line-height: 41.02px;
+    padding-bottom: 24px;
   }
   p {
     font-size: 18px;
-    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+    font-family: "Open Sans", system-ui;
     color: #616c70;
-    line-height: 30px;
-    padding-bottom: 20px;
+    line-height: 29.77px;
   }
-} //media max-1400 min-1000 yes
+} //media max-1400 min-1000 yes 1x1 copy
 
-@media (max-width: 1360px) {
+@media (max-width: 1900px) {
   .PortfolioStandart {
     .bgimg {
       height: 250px;

@@ -107,6 +107,7 @@
       }
     }
     button {
+      cursor: pointer;
       margin-top: 58px;
       display: flex;
       align-items: center;
@@ -319,8 +320,9 @@
       flex-wrap: wrap;
       row-gap: 40px;
       .box {
+        cursor: pointer;
         width: 439px;
-        border-radius: 20px;
+        border-radius: 30px;
         padding-bottom: 10px;
         overflow: hidden;
         text-align: left;
@@ -401,6 +403,7 @@
       overflow: hidden;
       background-color: transparent;
       .img {
+        mix-blend-mode: normal;
         width: 100%;
         height: max-content;
       }

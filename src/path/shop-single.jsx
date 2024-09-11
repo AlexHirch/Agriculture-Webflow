@@ -3,6 +3,7 @@ import { Anor, Product1, ShopPatternBg, SingleProduct } from "../resource";
 import RateStar from "../components/Rate";
 import { IoMdArrowRoundForward } from "react-icons/io";
 import "../styles/single-shop.scss";
+import CardShop from "../components/mini-components/card";
 
 const ShopSingle = ({ cart1, setCart1 }) => {
   const [vis, setVis] = useState(false);
@@ -17,7 +18,7 @@ const ShopSingle = ({ cart1, setCart1 }) => {
   }, []);
   return (
     <>
-      <div className="bgc F3F3F5">
+      <div className="bgc F3F2F7">
         <div className="ShopSingle containCenter">
           <div className="bgimg">
             <img className="bg1" src={Anor} alt="YAMETE" />
@@ -31,6 +32,7 @@ const ShopSingle = ({ cart1, setCart1 }) => {
       <div className="single_shop_product containCenter">
         <div className="top">
           <div className="left">
+          <p className="top">Millets</p>
             <img src={SingleProduct} alt="" />
           </div>
           <div className="right">
@@ -106,70 +108,10 @@ const ShopSingle = ({ cart1, setCart1 }) => {
       <div className="OurProducts shopsingle containCenter">
         <p className="pp">Related Products</p>
         <div className="cards">
-          <div className="card">
-            <p className="top">Vegetable</p>
-            <div className="img">
-              <img src={Product1} alt="" />
-            </div>
-            <p className="Name">Calabrese Broccoli</p>
-            <hr />
-            <div className="price">
-              <p>
-                <span>$20.00</span>$13.00
-              </p>
-              <div className="rate">
-                <RateStar />
-              </div>
-            </div>
-          </div>
-          <div className="card">
-            <p className="top">Vegetable</p>
-            <div className="img">
-              <img src={Product1} alt="" />
-            </div>
-            <p className="Name">Calabrese Broccoli</p>
-            <hr />
-            <div className="price">
-              <p>
-                <span>$20.00</span>$13.00
-              </p>
-              <div className="rate">
-                <RateStar />
-              </div>
-            </div>
-          </div>
-          <div className="card">
-            <p className="top">Vegetable</p>
-            <div className="img">
-              <img src={Product1} alt="" />
-            </div>
-            <p className="Name">Calabrese Broccoli</p>
-            <hr />
-            <div className="price">
-              <p>
-                <span>$20.00</span>$13.00
-              </p>
-              <div className="rate">
-                <RateStar />
-              </div>
-            </div>
-          </div>
-          <div className="card">
-            <p className="top">Vegetable</p>
-            <div className="img">
-              <img src={Product1} alt="" />
-            </div>
-            <p className="Name">Calabrese Broccoli</p>
-            <hr />
-            <div className="price">
-              <p>
-                <span>$20.00</span>$13.00
-              </p>
-              <div className="rate">
-                <RateStar />
-              </div>
-            </div>
-          </div>
+          <CardShop/>
+          <CardShop/>
+          <CardShop/>
+          <CardShop/>
         </div>
       </div>
     </>

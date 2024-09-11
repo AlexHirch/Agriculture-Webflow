@@ -13,7 +13,9 @@ const CardShop = () => {
         <img src={Product1} alt="" />
       </div>
       <div className="padding-10">
-        <p onClick={() => navigate("/shop/product")} className="Name">Calabrese Broccoli</p>
+        <p onClick={() => navigate("/shop/product")} className="Name">
+          Calabrese Broccoli
+        </p>
         <hr />
         <div className="price">
           <p>

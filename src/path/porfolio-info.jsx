@@ -1,5 +1,5 @@
 import React, { useEffect } from "react";
-import { Carrot2, Raspberry } from "../resource";
+import { BlackRaspbery12, Carrot2, Raspberry } from "../resource";
 import { IoChevronBackCircle } from "react-icons/io5";
 import { useNavigate } from "react-router-dom";
 import "../styles/projects.scss"
@@ -21,7 +21,7 @@ const PorfolioInfo = () => {
           <IoChevronBackCircle />
         </div>
         <div className="img">
-          <img src={Raspberry} alt="" />
+          <img src={BlackRaspbery12} alt="" />
         </div>
         <div className="content_box">
           <div className="text">
@@ -35,16 +35,16 @@ const PorfolioInfo = () => {
           </div>
           <div className="info">
             <p>
-              Date <span>: December 4, 2022</span>
+              Date <span> :</span> <span> December 4, 2022</span>
             </p>
             <p>
-              Client <span>: Kevin Martin</span>
+              Client <span> :</span> <span> Kevin Martin</span>
             </p>
             <p>
-              Category <span>: Agriculture , Eco</span>
+              Category <span> :</span> <span> Agriculture , Eco</span>
             </p>
             <p>
-              Service <span>: Organic Products</span>
+              Service <span> :</span> <span> Organic Products</span>
             </p>
           </div>
         </div>
@@ -80,6 +80,8 @@ const PorfolioInfo = () => {
           Ipsum as their default model text, and auncover many web sites still
           in their infancy. Various versions have evolved over the years
         </p>
+        <br />
+        <br />
         <h2>Conclusion:</h2>
         <p>
           t is a long established fact that a reader will be distracted by the

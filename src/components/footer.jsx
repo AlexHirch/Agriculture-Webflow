@@ -50,22 +50,30 @@ const Footer = () => {
           <div className="center">
             <img src={LogoOrganick} alt="" />
             <p>
-              Simply dummy text of the printing and typesetting industry. <br /> Lorem
-              Ipsum simply dummy text of the printing{" "}
+              Simply dummy text of the printing and typesetting industry. <br />{" "}
+              Lorem Ipsum simply dummy text of the printing{" "}
             </p>
             <div className="social">
-              <span>
-                <FaInstagram />
-              </span>
-              <span>
-                <FaFacebook />
-              </span>
-              <span>
-                <FaTwitter />
-              </span>
+              <a target="_blank" href="https://www.instagram.com/discoveragriculture?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==">
+                <span>
+                  <FaInstagram />
+                </span>
+              </a>
+              <a target="_blank" href="https://www.facebook.com/p/Agriculture-100068310005265/">
+                <span>
+                  <FaFacebook />
+                </span>
+              </a>
+              <a target="_blank" href="https://x.com/euagri">
+                <span>
+                  <FaTwitter />
+                </span>
+              </a>
+              <a target="_blank" href="https://www.pinterest.com/westgateacademy/agriculture/">
               <span>
                 <FaPinterest />
               </span>
+              </a>
             </div>
           </div>
           <hr />
