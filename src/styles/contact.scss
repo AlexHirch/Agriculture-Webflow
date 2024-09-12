@@ -9,28 +9,29 @@
     align-items: center;
     justify-content: center;
     z-index: 0;
-    height: 300px;
+    height: 450px;
     img {
-      width: 80%;
+      width: 100%;
       position: absolute;
       &.bg1 {
-        bottom: -50%;
-        left: -30%;
+        bottom: -70%;
+        left: -45%;
       }
       &.bg2 {
-        top: -80%;
-        right: -30%;
+        top: -105%;
+        right: -44%;
       }
       &.pattern {
+        height: 100%;
         width: 100%;
-        bottom: -10%;
+        top: 0;
       }
     }
     p {
       position: absolute;
       z-index: 2;
       font-family: Roboto;
-      font-size: 50px;
+      font-size: 70px;
       color: #274c5b;
     }
   }
@@ -38,50 +39,58 @@
 .single_shop_product1 {
   width: 100%;
   height: max-content;
-  padding: 50px 180px 0px 180px;
+  padding: 209px 259px 0px 259px;
   .top {
     display: flex;
     align-items: start;
     justify-content: center;
     text-align: start;
     .left {
-      width: 100%;
-      padding-right: 40px;
+      width: 50%;
+      padding-right: 75px;
       img {
         width: 100%;
       }
     }
     .right {
-      width: 100%;
-      padding: 20px 0 0 60px;
+      width: 50%;
+      padding-top: 23px;
       h2 {
         font-family: Roboto;
-        font-size: 35px;
+        font-size: 50px;
+        font-weight: 900;
+        text-shadow: 1.5px 0px 0 #274c5b;
         color: #274c5b;
       }
       .comment {
         display: flex;
         align-items: center;
         gap: 5px;
-        font-family: Arial, Helvetica, sans-serif;
-        font-size: 14px;
-        line-height: 20px;
-        color: #778388;
+        font-family: "Open Sans";
+        font-size: 18px;
+        line-height: 29.77px;
+        color: #454849;
         padding: 20px 0;
       }
       .box1 {
-        margin: 20px 0;
-        width: 260px;
+        margin-top: 10px;
+        width: 352px;
         height: max-content;
         display: flex;
         align-items: center;
-        box-shadow: 0 0 2px grey;
-        border-radius: 10px;
-        padding: 10px;
+        border: 1px solid #eeeeee;
+        border-radius: 20px;
+        padding: 11px 0 13px 12px;
+        &:nth-child(2) {
+          box-shadow: 0 20px 30px rgb(237, 234, 234);
+          margin: 17px 0 0 0;
+        }
         img {
-          width: 50px;
+          width: auto;
+          height: 100%;
         }
         p {
+          font-size: 25px;
           width: 100%;
           height: max-content;
           font-family: Roboto;
@@ -89,7 +98,8 @@
           display: grid;
           padding: 0 20px;
           span {
-            font-family: Arial, Helvetica, sans-serif;
+            font-size: 18px;
+            font-family: "Open Sans";
             color: #778388;
           }
         }
@@ -102,8 +112,8 @@
           display: flex;
           gap: 20px;
           span {
-            width: 50px;
-            height: 50px;
+            width: 60px;
+            height: 60px;
             border-radius: 50px;
             display: flex;
             align-items: center;
