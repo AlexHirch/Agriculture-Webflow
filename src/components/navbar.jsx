@@ -4,8 +4,7 @@ import { LogoOrganick, ShopingCart } from "../resource";
 import { NavLink, useNavigate } from "react-router-dom";
 import { IoIosArrowForward } from "react-icons/io";
 import { GoArrowUp } from "react-icons/go";
-import { FaBars } from "react-icons/fa";
-import { FaRegCircleXmark } from "react-icons/fa6";
+import { FaBars, FaWindowClose } from "react-icons/fa";
 import { IoSearch } from "react-icons/io5";
 
 const Navbar = ({ cart1, setCart1 }) => {
@@ -13,6 +12,7 @@ const Navbar = ({ cart1, setCart1 }) => {
 
   const [scrollValue, setScrollValue] = useState(0);
   const [vis, setVis] = useState(false);
+  const [search, setSearch] = useState(false);
 
   window.onscroll = function () {
     setScrollValue(document.documentElement.scrollTop);
@@ -21,15 +21,12 @@ const Navbar = ({ cart1, setCart1 }) => {
   return (
     <div className="NavBar containCenter">
       <div className="nav-left">
-        <button onClick={() => setVis(true)} className="barsbtn">
-        <FaBars />
-        </button>
-        <div onClick={() => navigate("/")} className="logo">
+        <div onClick={() => navigate("/")} className={search ? "logo active" : "logo"}>
           <img src={LogoOrganick} alt="Logo-Organick" />
         </div>
         <div className={vis ? "navigation active" : "navigation"}>
           <button onClick={() => setVis(false)} className="xmark">
-          <FaRegCircleXmark size={30} />
+          <FaWindowClose />
           </button>
           <div onClick={() => setVis(false)} className="page-link">
             <NavLink to={"/"}>Home</NavLink>
@@ -70,10 +67,16 @@ const Navbar = ({ cart1, setCart1 }) => {
         </div>
       </div>
       <div className="search_cart">
-        <form className="search-nav">
+        <form className={search ? "search-nav active" : "search-nav"}>
           <input type="text" />
-          <button type="submit">
-          <IoSearch />
+          <button className={search ? "active" : ""}
+            onClick={(e) => {
+              e.preventDefault();
+              setSearch(!search);
+            }}
+            type="submit"
+          >
+            <IoSearch />
           </button>
         </form>
         <div className="shopping-path">
@@ -84,6 +87,9 @@ const Navbar = ({ cart1, setCart1 }) => {
             Cart ({cart1})
           </p>
         </div>
+        <button onClick={() => setVis(true)} className="barsbtn">
+          <FaBars />
+        </button>
       </div>
       <div
         onClick={() => {
