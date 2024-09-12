@@ -18,7 +18,7 @@ import { IoIosCloseCircleOutline } from "react-icons/io";
 import { useNavigate } from "react-router-dom";
 
 const ServisePage = () => {
-  const navigate = useNavigate()
+  const navigate = useNavigate();
   const top0 = () => {
     window.scrollTo({ top: 0, behavior: "instant" });
   };
@@ -143,7 +143,7 @@ const ServisePage = () => {
               </div>
             </div>
             <div className="btnn">
-              <button onClick={()=>navigate("/news/blog")}>
+              <button onClick={() => navigate("/news/blog")}>
                 Explore More{" "}
                 <span>
                   <IoArrowForwardCircle />

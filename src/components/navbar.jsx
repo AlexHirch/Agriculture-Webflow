@@ -3,7 +3,6 @@ import "../styles/navbar.scss";
 import { LogoOrganick, ShopingCart } from "../resource";
 import { NavLink, useNavigate } from "react-router-dom";
 import { IoIosArrowForward } from "react-icons/io";
-import { TiShoppingCart } from "react-icons/ti";
 import { GoArrowUp } from "react-icons/go";
 import { FaBars } from "react-icons/fa";
 import { FaRegCircleXmark } from "react-icons/fa6";

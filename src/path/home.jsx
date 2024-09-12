@@ -1,7 +1,6 @@
 import React, { useEffect } from "react";
 import "../styles/home.scss";
 import { BackgroundPatterns, HomeBackground } from "../resource";
-import { IoArrowForwardCircle } from "react-icons/io5";
 import OfferBanner from "../components/offerBanner";
 import HomeAbout_us from "../components/home-about_us";
 import OurProducts from "../components/OurProducts";

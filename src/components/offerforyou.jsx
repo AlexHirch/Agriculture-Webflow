@@ -1,7 +1,4 @@
 import React from "react";
-import { IoArrowForwardCircle } from "react-icons/io5";
-import RateStar from "./Rate";
-import { Product1 } from "../resource";
 import { useNavigate } from "react-router-dom";
 import { FiArrowRight } from "react-icons/fi";
 import CardShop from "./mini-components/card";

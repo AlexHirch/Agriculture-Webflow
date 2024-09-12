@@ -1,6 +1,5 @@
 import React from "react";
-import { Customer, Yban1 } from "../resource";
-import RateStar from "./Rate";
+import { Yban1 } from "../resource";
 import Slider from "./slider";
 
 const Customers = () => {
