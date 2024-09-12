@@ -1,0 +1,91 @@
+.LicensePage {
+  width: 100%;
+  max-width: 1920px;
+  height: 225px;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image: url("../resource/img/bgpatpas.svg");
+  p {
+    font-family: Roboto;
+    font-size: 50px;
+    font-weight: 800;
+    line-height: 58.59px;
+    text-align: left;
+    color: #274c5b;
+  }
+}
+.License {
+  width: 100%;
+  height: max-content;
+  padding: 150px 405px 130px 260px;
+  display: grid;
+  gap: 100px;
+  .box {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    h1 {
+      width: max-content;
+      font-family: Roboto;
+      font-size: 40px;
+      font-weight: 800;
+      line-height: 46.88px;
+      text-align: left;
+      color: #274c5b;
+    }
+    .left {
+      width: 66%;
+      display: grid;
+      p {
+        font-family: "Open Sans";
+        font-size: 18px;
+        font-weight: 400;
+        line-height: 29.77px;
+        text-align: left;
+        color: #525c60;
+        &:first-child {
+          padding-bottom: 45px;
+        }
+        span {
+          font-weight: 700;
+          color: #7eb693;
+        }
+      }
+      h2 {
+        font-family: Roboto;
+        font-size: 30px;
+        font-weight: 800;
+        line-height: 35.16px;
+        text-align: left;
+        color: #274c5b;
+        padding-bottom: 11px;
+      }
+      h4 {
+        color: #274c5b;
+        font-family: "Open Sans";
+        font-size: 18px;
+        font-weight: 400;
+        line-height: 29.77px;
+        text-align: left;
+        &:nth-child(3) {
+          padding-bottom: 45px;
+        }
+      }
+      h5 {
+        padding-right: 90px;
+        font-family: "Open Sans";
+        font-size: 18px;
+        font-weight: 400;
+        line-height: 29.77px;
+        text-align: left;
+        color: #525c60;
+        span{
+            color: #274c5b;
+            font-weight: 700;
+        }
+      }
+    }
+  }
+}

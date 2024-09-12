@@ -18,6 +18,7 @@ import News from "./path/news";
 import NewsSingleBlog from "./path/news-single-blog";
 import ContactUs from "./path/contact";
 import Password from "./path/password";
+import LicensePage from "./path/license";
 
 const App = () => {
   const [cart1, setCart1] = useState(0)
@@ -40,6 +41,7 @@ const App = () => {
           <Route path="/news" element={<News />} />
           <Route path="/news/blog" element={<NewsSingleBlog />} />
           <Route path="/pages/contact-us" element={<ContactUs />} />
+          <Route path="/license" element={<LicensePage />} />
           <Route path="*" element={<PageNotFound />} />
         </Routes>
         <Footer />

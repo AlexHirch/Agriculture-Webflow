@@ -1,12 +1,12 @@
 import React from "react";
-import { Bgpatpas, NewsPattern, PasswordPhoto } from "../resource";
+import { Bgpatpas, PasswordPhoto } from "../resource";
 import "../styles/password.scss"
 import { IoMdArrowRoundForward } from "react-icons/io";
 
 const Password = () => {
   return (
     <>
-    <div className="bgc">
+    <div className="bgc" style={{backgroundColor:"#FAFAFA"}}>
       <div className="Password containCenter">
         <div className="bgimg">
           <img src={Bgpatpas} alt="KUDASAY" />

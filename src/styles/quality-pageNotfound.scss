@@ -19,22 +19,27 @@
     width: 30%;
     position: absolute;
     text-align: center;
-    right: 15%;
-    top: 20%;
+    right: 12%;
+    top: 15%;
+    font-family: Roboto;
     h1 {
-      font-size: 200px;
+      font-size: 300px;
       color: #8fa8a8;
     }
     h2 {
-      font-size: 50px;
+      font-size: 70px;
+      margin-top: -50px;
       color: #274c5b;
     }
     p {
-      font-size: 20px;
-      color: #616c70;
+      font-size: 18px;
+      font-family: 'Open Sans';
+      color: #4a4d4e;
+      font-weight: 500;
     }
     button {
-      margin: 20px auto;
+      margin: 20px;
+      margin-top: 40px;
       display: flex;
       align-items: center;
       justify-content: center;
@@ -42,17 +47,17 @@
       background-color: #274c5b;
       border: none;
       font-size: 20px;
-      border-radius: 10px;
+      border-radius: 20px;
       color: white;
       gap: 7px;
       font-family: Roboto;
       span {
         display: flex;
-        font-size: 10px;
-        padding: 2px;
+        font-size: 12px;
+        padding: 3px;
         border-radius: 20px;
         color: white;
-        background-color: rgba(255, 255, 255, 0.3);
+        background-color: #335B6B;
         width: max-content;
         height: max-content;
       }

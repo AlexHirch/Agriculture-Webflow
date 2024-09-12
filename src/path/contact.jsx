@@ -131,7 +131,7 @@ const ContactUs = () => {
           </div>
           <div className="in2">
             <p>Message*</p>
-            <textarea name="" id="" placeholder="Message"></textarea>
+            <textarea name="" id="" placeholder="hello there,i would like to talk about how to..."></textarea>
           </div>
           <button>Send Message</button>
         </form>

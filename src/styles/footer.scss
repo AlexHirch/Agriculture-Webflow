@@ -107,15 +107,15 @@
               color: #274c5b;
             }
             p {
-              font-family: Arial, Helvetica, sans-serif;
+              font-family: 'Open Sans';
               font-size: 18px;
               font-weight: 700;
-              color: #616c70;
+              color: #525C60;
               line-height: 29.7px;
               &:last-child {
                 font-size: 18px;
-                font-weight: 300;
-                color: #778388;
+                font-weight: 400;
+                color: #525C60;
               }
             }
           }
@@ -138,15 +138,16 @@
               color: #274c5b;
             }
             p {
-              font-family: Arial, Helvetica, sans-serif;
+              font-family: "Open Sans";
               font-size: 18px;
               font-weight: 700;
-              color: #616c70;
+              color: #525C60;
               line-height: 29.7px;
+              text-rendering: geometricPrecision;
               &:last-child {
                 font-size: 18px;
-                font-weight: 300;
-                color: #778388;
+                font-weight: 400;
+                color: #525C60;
               }
             }
           }

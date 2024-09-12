@@ -7,8 +7,10 @@ import {
   FaPinterest,
   FaTwitter,
 } from "react-icons/fa";
+import { useNavigate } from "react-router-dom";
 
 const Footer = () => {
+  const navigate = useNavigate()
   return (
     <div className="footer containCenter">
       <div className="subscribe br1">
@@ -101,7 +103,7 @@ const Footer = () => {
           </div>
         </div>
         <div className="bot">
-          <p>
+          <p onClick={()=>navigate("/license")} style={{cursor:"pointer"}}>
             Copyright © <span>Organick</span> | Designed by{" "}
             <span>VictorFlow</span> Templates - Powered by <span>Webflow</span>
           </p>

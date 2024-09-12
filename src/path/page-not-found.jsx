@@ -16,7 +16,7 @@ const PageNotFound = () => {
   }, []);
   return (
     <>
-      <div className="bgc B5C3C6">
+      <div className="bgc B5C3C6" style={{marginBottom:-360, position: "relative", zIndex: 4, mixBlendMode:"normal"}}>
         <div className="PageNotFound containCenter">
           <div className="bgimg">
             <img src={PageNotFoundBg} alt="" />
