@@ -100,7 +100,7 @@
           span {
             font-size: 18px;
             font-family: "Open Sans";
-            color: #778388;
+            color: #525C60;
           }
         }
       }
@@ -222,7 +222,7 @@
         border: 1px solid #7eb693;
         border-radius: 20px;
         width: 100%;
-        font-family: Arial, Helvetica, sans-serif;
+        font-family: 'Open Sans';
         font-size: 20px;
         padding: 29px 25px;
         outline: none;
@@ -335,7 +335,7 @@
   }
 } //yes
 
-@media (max-width: 760px) {
+@media (max-width: 480px) {
   .ContactUs {
     .bgimg {
       height: 30vw;

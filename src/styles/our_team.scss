@@ -59,7 +59,7 @@
     span.small {
       font-family: "Open Sans", sans-serif;
       font-size: 18px;
-      font-weight: 200;
+      font-weight: 400;
       padding: 0 250px 28px 250px;
       line-height: 29.77px;
       color: #525c60;
@@ -168,7 +168,7 @@
     }
   }
 }
-@media (max-width: 760px) {
+@media (max-width: 480px) {
   .OurTeam {
     .bgimg {
       height: 30vw;

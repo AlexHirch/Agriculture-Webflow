@@ -43,22 +43,22 @@ const Home = () => {
           </div>
         </div>
       </div>
-      
-        <OfferBanner />
-        <div className="bgc F9F8F8">
-          <HomeAbout_us />
-        </div>
 
-        <OurProducts />
-        <div className="bgc FCFCFC">
-          <Customers />
-        </div>
-        <div className="bgc a274C5B">
-          <OfferForYou />
-        </div>
-        <HpEcoTriendly />
-        <HpElement1 />
-        <HpNews />
+      <OfferBanner />
+      <div className="bgc F9F8F8">
+        <HomeAbout_us />
+      </div>
+
+      <OurProducts />
+      <div className="bgc FCFCFC">
+        <Customers />
+      </div>
+      <div className="bgc a274C5B">
+        <OfferForYou />
+      </div>
+      <HpEcoTriendly />
+      <HpElement1 />
+      <HpNews />
     </>
   );
 };

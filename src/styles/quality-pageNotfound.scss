@@ -315,7 +315,7 @@
   } //media max-1400 min-1000 yes
 }
 
-@media (max-width: 760px) {
+@media (max-width: 480px) {
   .PageNotFound {
     .bgimg {
       height: 50vh;
@@ -412,7 +412,7 @@
           p {
             font-size: 12px;
             font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
-            color: #778388;
+            color: #525C60;
             line-height: 18px;
           }
         }

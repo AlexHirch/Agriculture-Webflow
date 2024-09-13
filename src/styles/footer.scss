@@ -173,10 +173,10 @@
         }
         p {
           padding: 0 40px;
-          font-family: Arial, Helvetica, sans-serif;
+          font-family: 'Open Sans';
           font-size: 18px;
           line-height: 29.77px;
-          color: #778388;
+          color: #525C60;
           margin-bottom: 35px;
         }
         .social {
@@ -209,8 +209,8 @@
       margin-bottom: -30px;
       p {
         color: #525c60;
-        font-family: Arial, Helvetica, sans-serif;
-        font-weight: 200;
+        font-family: 'Open Sans';
+        font-weight: 400;
         font-size: 18px;
         span {
           font-weight: 700;
@@ -275,7 +275,7 @@
   }
 } //yes
 
-@media (max-width: 760px) {
+@media (max-width: 480px) {
   .footer {
     .subscribe {
       max-width: 100%;
