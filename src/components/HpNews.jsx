@@ -11,7 +11,7 @@ const HpNews = () => {
       <div className="top">
         <div className="left">
           <p>News</p>
-          <h2>Discover weekly content about <br /> organic food, & more</h2>
+          <h2>Discover weekly content about organic food, & more</h2>
         </div>
         <div className="right">
           <button  onClick={()=>navigate('/news')}>

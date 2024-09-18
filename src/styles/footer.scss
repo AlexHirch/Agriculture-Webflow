@@ -1,4 +1,4 @@
-.footer {
+.footera {
   width: 100%;
   height: max-content;
   display: flex;
@@ -6,7 +6,7 @@
   align-items: center;
   padding-top: 100px;
   justify-content: center;
-  .subscribe.br1{
+  .subscribebr1 {
     width: 1400px;
     padding: 105px 71px;
     border-radius: 30px;
@@ -56,8 +56,8 @@
           padding: 28px 23px;
           border: none;
           border-radius: 16px;
-          &::placeholder{
-            color: #ABABAB;
+          &::placeholder {
+            color: #ababab;
           }
           &:focus {
             background-color: rgb(210, 255, 255);
@@ -107,15 +107,15 @@
               color: #274c5b;
             }
             p {
-              font-family: 'Open Sans';
+              font-family: "Open Sans";
               font-size: 18px;
               font-weight: 700;
-              color: #525C60;
+              color: #525c60;
               line-height: 29.7px;
               &:last-child {
                 font-size: 18px;
                 font-weight: 400;
-                color: #525C60;
+                color: #525c60;
               }
             }
           }
@@ -141,13 +141,13 @@
               font-family: "Open Sans";
               font-size: 18px;
               font-weight: 700;
-              color: #525C60;
+              color: #525c60;
               line-height: 29.7px;
               text-rendering: geometricPrecision;
               &:last-child {
                 font-size: 18px;
                 font-weight: 400;
-                color: #525C60;
+                color: #525c60;
               }
             }
           }
@@ -173,10 +173,10 @@
         }
         p {
           padding: 0 40px;
-          font-family: 'Open Sans';
+          font-family: "Open Sans";
           font-size: 18px;
           line-height: 29.77px;
-          color: #525C60;
+          color: #525c60;
           margin-bottom: 35px;
         }
         .social {
@@ -209,7 +209,7 @@
       margin-bottom: -30px;
       p {
         color: #525c60;
-        font-family: 'Open Sans';
+        font-family: "Open Sans";
         font-weight: 400;
         font-size: 18px;
         span {
@@ -276,40 +276,42 @@
 } //yes
 
 @media (max-width: 480px) {
-  .footer {
-    .subscribe {
+  .footera {
+    .subscribebr1 {
       max-width: 100%;
       width: 90%;
       border-radius: 20px;
       padding: 20px;
       .img {
         img {
-          width: 300%;
+          width: 450%;
           position: absolute;
         }
       }
       .content {
         flex-wrap: wrap;
-        p {
-          font-family: Roboto;
+        p.sub {
           font-size: 30px;
-          width: 100%;
-          color: white;
+          line-height: normal;
+          margin-bottom: 30px;
         }
-        form {
-          width: 100%;
+        form.sub {
           input {
             width: 60%;
             height: 50px;
-            font-size: 12px;
+            font-size: 14px;
+            padding: 18px 13px;
+            border-radius: 6px;
           }
           button {
             width: 40%;
-            height: 50px;
+            padding: 0 20px;
+            font-size: 14px;
+            border-radius: 6px;
           }
         }
       }
-    }
+    } //----------------------------------------------------------------
     footer {
       padding: 30px;
       .top {

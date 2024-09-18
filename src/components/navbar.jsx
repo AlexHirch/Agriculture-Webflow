@@ -5,7 +5,7 @@ import { NavLink, useNavigate } from "react-router-dom";
 import { IoIosArrowForward } from "react-icons/io";
 import { GoArrowUp } from "react-icons/go";
 import { FaBars, FaWindowClose } from "react-icons/fa";
-import { IoSearch } from "react-icons/io5";
+import { IoClose, IoSearch } from "react-icons/io5";
 
 const Navbar = ({ cart1, setCart1 }) => {
   const navigate = useNavigate();
@@ -21,12 +21,15 @@ const Navbar = ({ cart1, setCart1 }) => {
   return (
     <div className="NavBar containCenter">
       <div className="nav-left">
-        <div onClick={() => navigate("/")} className={search ? "logo active" : "logo"}>
+        <div
+          onClick={() => navigate("/")}
+          className={search ? "logo active" : "logo"}
+        >
           <img src={LogoOrganick} alt="Logo-Organick" />
         </div>
         <div className={vis ? "navigation active" : "navigation"}>
           <button onClick={() => setVis(false)} className="xmark">
-          <FaWindowClose />
+            <FaWindowClose />
           </button>
           <div onClick={() => setVis(false)} className="page-link">
             <NavLink to={"/"}>Home</NavLink>
@@ -69,14 +72,17 @@ const Navbar = ({ cart1, setCart1 }) => {
       <div className="search_cart">
         <form className={search ? "search-nav active" : "search-nav"}>
           <input type="text" />
-          <button className={search ? "active" : ""}
+          <button className={search ? "active search1" : "search1"}>
+            <IoSearch />
+          </button>
+          <button
+            className={search ? "active bttn" : "bttn"}
             onClick={(e) => {
               e.preventDefault();
               setSearch(!search);
             }}
-            type="submit"
           >
-            <IoSearch />
+            {search ? <IoClose /> : <IoSearch />}
           </button>
         </form>
         <div className="shopping-path">

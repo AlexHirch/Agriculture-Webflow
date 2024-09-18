@@ -12,8 +12,8 @@ import { useNavigate } from "react-router-dom";
 const Footer = () => {
   const navigate = useNavigate()
   return (
-    <div className="footer containCenter">
-      <div className="subscribe br1">
+    <div className="footera containCenter">
+      <div className="subscribebr1">
         <div className="img">
           <img src={SubscribeBgImg} alt="BgImg" />
         </div>
